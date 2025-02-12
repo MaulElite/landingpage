@@ -74,6 +74,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   observer.observe(image);
 });
+
+
 // Profile js
 var swiper = new Swiper (".slide-content", {
     slidesPerView: 3,
@@ -146,11 +148,9 @@ Vue.component('card', {
 
     },
     cardBgTransform() {
-      const tX = this.mousePX * -40;
-      const tY = this.mousePY * -40;
       return {
-        transform: `translateX(${tX}px) translateY(${tY}px)` };
-
+        transform: `none`
+      };
     },
     cardBgImage() {
       return {
@@ -161,7 +161,7 @@ Vue.component('card', {
   methods: {
     handleMouseMove(e) {
       this.mouseX = e.pageX - this.$refs.card.offsetLeft - this.width / 2;
-      this.mouseY = e.pageY - this.$refs.card.offsetTop - this.height / 2;
+      this.mouseY = e.pageY - this.$refs.card.offsetTop - this.height / 1;
     },
     handleMouseEnter() {
       clearTimeout(this.mouseLeaveDelay);
