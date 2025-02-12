@@ -7,6 +7,7 @@ body {
     background-position: center; /* Pusatkan gambar */
     background-repeat: no-repeat; /* Hindari pengulangan gambar */
     background-attachment: fixed; /* Biarkan gambar tetap saat di-scroll */
+    
 }
 
 
@@ -507,7 +508,175 @@ body {
 
 
 
+.container-vip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 1200px;
+}
 
+    
+    .header-vip {
+      margin-bottom: 40px;
+    }
+    
+    .header-vip h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #ff9f43, #ffd000, #b4852f);
+    }
+    
+    .header-vip p {
+      font-size: 20px;
+      color: #f0f0f0;
+    }
+    
+    .cta-button-vip {
+      background: linear-gradient(135deg, #ff9f43, #ff6f61);
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+    
+    .cta-button-vip:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(255, 111, 97, 0.4);
+    }
+    
+    .content-vip {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      margin-top: 40px;
+      margin-left: 25px;
+    }
+    
+    .benefits {
+      width: 70%;
+      text-align: left;
+      margin: 0 0 0 50px;
+    }
+    
+    .benefits h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: aquamarine;
+    }
+    
+    .benefits ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .benefits ul li {
+      font-size: 18px;
+      margin-bottom: 20px;
+      padding-left: 40px;
+      position: relative;
+    }
+    
+    .benefits ul li::before {
+      content: '\f058'; /* Font Awesome check icon */
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      color: aquamarine;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 24px;
+    }
+    
+    .images-vip {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      
+    }
+    
+    .image-card-vip {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      filter: grayscale(100%);
+    }
+    
+    .image-card-vip:hover {
+        filter: grayscale(0%);
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    .image-card-vip img {
+      
+      width: 50%;
+      border-radius: 10px;
+    }
+    
+    .image-card-vip p {
+      font-size: 16px;
+      margin-top: 10px;
+      color: #f0f0f0;
+    }
+    
+    .pricing {
+      margin-right: 60vh;
+      margin-top: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      display: inline-block;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .pricing h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: aquamarine;
+    }
+    
+    .pricing .original-price {
+      font-size: 24px;
+      color: #f0f0f0;
+      text-decoration: line-through;
+      margin-right: 10px;
+    }
+    
+    .pricing .discounted-price {
+      font-size: 40px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #4cd137, #aaff00, #4cd137);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 2s infinite linear;
+    }
+    
+    .pricing:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
 
 
 
@@ -1080,8 +1249,6 @@ canvas {
     font-size: 15px;
     line-height: 24px;
     color: #737373;
-    margin: 0 -38px;
-    margin-top: 100px;
     padding: 20px 70px;
     padding-top: 20px;
     padding-bottom: -40px;
@@ -1233,139 +1400,122 @@ canvas {
     background-color: #ea4c89
 }
 
-
-@media (max-width:1300px) {
-
+/* Responsive for screens up to 1300px */
+@media (max-width: 1300px) {
     .parallax__title_about {
         padding: 0 180px;
     }
-
     .parallax__title_about h1 {
         font-size: 4vh;
     }
-
     .parallax__title_about p {
         font-size: 20px;
     }
-
     .parallax__header,
     .parallax__content {
         padding: -20px;
         flex-direction: column;
         text-align: center;
     }
-
     .container2 {
         padding: 50px;
     }
-
+    .pricing{
+        margin-left: 60vh;
+    }
 }
 
-/* promo responsive */
-
-
-@media (max-width:768px) {
-
+/* Responsive for screens up to 768px */
+@media (max-width: 768px) {
     .parallax__title,
     .parallax__title_2 {
         font-size: 35px;
     }
-
     .slide-content {
         margin: 0 10px;
     }
-
     .swiper-navBtn {
         display: none !important;
     }
-
     .social-icons li.title {
         display: block;
         margin-right: 0;
-        font-weight: 600
+        font-weight: 600;
     }
-
     .site-footer {
-        padding-bottom: 0
+        padding-bottom: 0;
     }
-
     .site-footer .copyright-text,
     .site-footer .social-icons {
-        text-align: center
+        text-align: center;
     }
-
-    /* kontak */
-
+    .content-vip {
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefits,
+    .images-vip {
+        width: 100%;
+    }
+    .header-vip h1 {
+        font-size: 36px;
+    }
+    .header-vip p {
+        font-size: 18px;
+    }
+    .pricing{
+        margin-left: 60vh;
+    }
 }
 
-
-/* Responsive for mobile screen */
+/* Responsive for screens up to 576px */
 @media (max-width: 576px) {
     body {
         margin: 0;
-
     }
-
-    /* dasboard mobile */
     .parallax__title,
     .parallax__title_2 {
         font-size: 50px;
     }
-
     .parallax__title_about {
         padding: 0 30px;
     }
-
     .parallax__title_about h1 {
         font-size: 3vh;
     }
-
     .parallax__title_about p {
         font-size: 13px;
     }
-
     .parallax__header,
     .parallax__content {
         padding: -50px;
         flex-direction: column;
         text-align: center;
     }
-
-    /* profile mobile */
     .container2 {
         padding: 70px;
     }
-
-
     .row {
         flex-direction: column;
         align-items: center;
     }
-
     .col-md-6 {
         width: 100%;
     }
-
     .content-left {
         align-items: center;
     }
-
     .image-container img {
         width: 120px;
     }
-
     .fitur-list {
         text-align: center;
     }
-
     .card-promo {
         width: 300px;
         margin-bottom: 30px;
     }
-
-.button-promo{
-    margin: 10px 0 0 95px;
-}
-    /* kontak */
- 
+    .button-promo {
+        margin: 10px 0 0 95px;
+    }
 }
