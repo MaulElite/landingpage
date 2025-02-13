@@ -1,5 +1,6 @@
 
 body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-image: url('img/bg1.png'); /* Ganti dengan path gambar */
@@ -52,9 +53,10 @@ body {
     min-height: 100svh;
     display: flex;
     position: relative;
+    color: #eaeaea;
 
 
-    background: linear-gradient(0deg, rgba(60, 249, 205, 1) 0%, rgba(0, 164, 204) 58%);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,164,204) 50%);
 }
 
 .cover {
@@ -277,6 +279,36 @@ body {
 }
 
 
+.visimisi {
+
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.column-visimisi {
+    flex: 1;
+    text-align: center;
+}
+
+.column-visimisi p {
+    margin-left: 20px;
+}
+
+.column h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.column ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+
+
 
 .blok-partikel1, .blok-partikel12 {
     position: absolute;
@@ -349,7 +381,7 @@ body {
 
 
 
-.parallax__title_about {
+.parallax__title_about  {
     opacity: 0;
     transform: translateY(100px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -394,14 +426,47 @@ body {
 
 /* profile css */
 
-
-
-.container2 {
+.carousel-visimisi {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    position: relative;
+}
+.carousel-track-visimisi {
+    display: flex;
+    width: max-content;
+    animation: scroll 10s linear infinite;
+    will-change: transform;
+}
+.carousel-track-visimisi:hover {
+    animation-play-state: paused;
+}
+.carousel-visimisi img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+/* .container2 {
     align-items: center;
     justify-content: center;
     margin-top: 0px;
     padding: 30px;
-    background: linear-gradient(0deg, rgb(255, 255, 255)0%, rgba(60, 249, 205, 1) 80%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 .container2 .h1-profile {
@@ -497,8 +562,7 @@ body {
 
 .swiper-pagination-bullet-active {
     background-color: rgba(0, 164, 204) !important;
-}
-
+} */
 
 
 
@@ -521,9 +585,19 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     text-align: center;
     max-width: 1200px;
+    
+
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, box-shadow, background;
+    transform-origin: center;
+    backface-visibility: hidden;
 }
 
-    
+.container-vip:hover {
+    transform: scale(1.05) translateZ(0);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(0deg, rgba(212, 212, 212, 0) 0%, rgba(34,193,195,1) 88%);
+}
     .header-vip {
       margin-bottom: 40px;
     }
@@ -733,14 +807,15 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     margin: 0 30px;
-    background:transparent;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
     transition: background 0.10s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card-promo:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(0deg, rgba(255,246,246,1) 0%, rgba(34,193,195,1) 88%);
+    background: linear-gradient(0deg, rgba(255, 246, 246, 0) 0%, rgba(34,193,195,1) 88%);
 }
 
 
@@ -789,21 +864,21 @@ body {
 .button-promo {
     margin: 10px 0 0 107px;
     padding: 15px;
-    border: 2px solid white;
-    box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0;
     border-radius: 15px;
     transition: all 0.6s ease;
+    background-color: gray;
+    border: #00000000;
 }
 
 .button-promo:hover {
     padding: 17px;
-    color: rgb(4, 217, 255);
+    color: rgb(255, 255, 255);
 }
 
 .button-promo a {
     padding: 0 7px;
     text-decoration: none;
-    transition: all 0.6s ease;
+    transition: all 0.1s ease;
 }
 
 @keyframes moveLeftToRight {
@@ -844,8 +919,12 @@ body {
 .container-kontak1 {
     /* background: linear-gradient(0deg, rgba(0, 164, 204) 0%, rgb(255, 255, 255) 58%); */
     padding: 200px 100px 0 100px;
+    /* background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); */
+ 
 }
 .card-border-kontak {
+
     height: auto;
     width: auto;
     border-radius: 15px;
@@ -854,22 +933,12 @@ body {
     padding: 40px 0 0 0;
 }
 
-.title-kontak {
-    position: absolute;
-    margin: 50vh 0 0 20vh ;
-    font-size: 20vh;
-    font-weight: 700;
-    color: rgb(102, 102, 102);
+.title-master{
+    font-size: 5vh;
+    text-align: center;
+    color: #eceeef;
+    
 }
-
-.title-kontak-2 {
-    position: absolute;
-    margin: 0 0 50vh 20vh ;
-    font-size: 20vh;
-    font-weight: 700;
-    color: rgb(102, 102, 102);
-}
-
 p {
     line-height: 1.5em;
 }
@@ -1067,10 +1136,12 @@ canvas {
 }
 
 .title-testimonial {
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
+    font-family: PP Neue Corp Wide, sans-serif;
+    font-size: 35px;
+    font: bold;
     color: #ffffff;
     margin-bottom: 40px;
+
 }
 
 .testimonial {
@@ -1466,6 +1537,9 @@ canvas {
     .pricing{
         margin-left: 60vh;
     }
+    .title-master{
+        font-size: 33px;
+    }
 }
 
 /* Responsive for screens up to 576px */
@@ -1484,7 +1558,7 @@ canvas {
         font-size: 3vh;
     }
     .parallax__title_about p {
-        font-size: 13px;
+        font-size: 15px;
     }
     .parallax__header,
     .parallax__content {
@@ -1517,5 +1591,11 @@ canvas {
     }
     .button-promo {
         margin: 10px 0 0 95px;
+    }
+    .column ul{
+        text-align: start;
+    }
+    .title-master{
+        font-size: 33px;
     }
 }
