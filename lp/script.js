@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const image = document.querySelector(".image-about");
+  const image = document.querySelector(".visimisi");
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -73,6 +73,44 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   observer.observe(image);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const vip = document.querySelector(".container-vip");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          vip.classList.add("visible"); 
+        } else {
+          vip.classList.remove("visible");
+        }
+      });
+    },
+    { threshold: 0.2 } 
+  );
+
+  observer.observe(vip);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const pricing = document.querySelector(".pricing");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          pricing.classList.add("visible"); 
+        } else {
+          pricing.classList.remove("visible");
+        }
+      });
+    },
+    { threshold: 0.2 } 
+  );
+
+  observer.observe(pricing);
 });
 
 
@@ -156,4 +194,3 @@ Vue.component('card', {
 const app = new Vue({
   el: '#app' });
 
-  
