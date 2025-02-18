@@ -115,7 +115,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Profile js
+document.addEventListener("DOMContentLoaded", function () {
+  const popup = document.getElementById("popup");
+  const openPopupButton = document.getElementById("openPopup");
+  const closePopupButton = document.getElementById("closePopup");
+  const body = document.body;
+  let scrollPosition = 0;
 
+  function openPopup() {
+    scrollPosition = window.scrollY;
+    popup.style.display = "flex";
+    
+    body.style.position = "fixed";
+    body.style.top = `-${scrollPosition}px`;
+    body.style.left = "0";
+    body.style.width = "100%";
+    body.style.overflow = "hidden";
+  }
+
+ 
+  function closePopup() {
+    popup.style.display = "none";
+
+    body.style.position = "";
+    body.style.top = "";
+    body.style.overflow = "";
+    window.scrollTo(0, scrollPosition);
+  }
+  openPopupButton.addEventListener("click", openPopup);
+
+  closePopupButton.addEventListener("click", closePopup);
+
+  window.addEventListener("click", function (event) {
+    if (event.target === popup) {
+      closePopup();
+    }
+  });
+});
 
 
 // kontak js
