@@ -272,7 +272,6 @@ body {
 
 
 .visimisi {
-
     justify-content: center;
     gap: 20px;
     max-width: 800px;
@@ -784,7 +783,7 @@ body {
     text-align: center;
     font-weight: bold;
     font-size: 24px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(63, 94, 251, 1) 66%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(180, 163, 7) 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -904,7 +903,7 @@ body {
 .card-unggulan {
     width: 900px;
     height: auto;
-    padding: 55px 0 0 0;
+    padding: 55px 0 60px 0;
     box-shadow: 0 4px 8px rgba(0, 164, 204);
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
@@ -919,6 +918,7 @@ body {
 .card-unggulan img:hover {
     transform: scale(1.05);
 }
+
 
 .button-unggulan {
 
@@ -1099,7 +1099,7 @@ p+p {
     box-shadow: none;
     background: transparent;
     transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    margin: 0 50px;
+    margin: 0 30px;
 }
 
 .card-bg {
@@ -1591,9 +1591,10 @@ canvas {
         text-align: center;
     }
 
-    .container2 {
-        padding: 50px;
+    .visimisi .column li{
+        text-align: start;
     }
+
 
     .pricing {
         margin-left: 5vh;
@@ -1625,6 +1626,13 @@ canvas {
     .parallax__title,
     .parallax__title_2 {
         font-size: 35px;
+    }
+
+    .visimisi{
+        box-shadow: none;
+    }
+    .visimisi .column li{
+        text-align: start;
     }
 
     .slide-content {
@@ -1724,13 +1732,13 @@ canvas {
         text-align: center;
     }
 
-    .container2 {
-        padding: 70px;
-    }
-
     .row {
         flex-direction: column;
         align-items: center;
+    }
+
+    .visimisi .column li{
+        text-align: start;
     }
 
     .col-md-6 {
@@ -1764,8 +1772,8 @@ canvas {
 
 
 
-    .column ul {
-        text-align: start;
+    .column li {
+        text-align: none;
     }
 
     .title-master {
@@ -1773,6 +1781,7 @@ canvas {
     }
 
     .visimisi {
+        box-shadow:none;
         font-size: 14px;
     }
 
