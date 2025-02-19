@@ -1026,7 +1026,7 @@ body {
 }
 
 .popup-content img{
-    width: 800px;
+    width: 600px;
     margin-left: -10vh;
 
 }
@@ -1678,8 +1678,34 @@ canvas {
         margin-left: 1vh;
     }
 
+   
+}
+
+@media(max-width:1024px) and (device-height: 1370px){
     .popup-content img {
-        width: 950px;
+        width: 800px;
+        margin-left: 1vh;
+    }
+    .close{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:1024px) and (device-height: 600px){
+    .popup-content img {
+        width: 400px;
+        margin-left: 10px;
+    }
+    .close{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:  1000px){
+    .popup-content img {
+        width: 800px;
+
         margin-left: 10px;
     }
 }
