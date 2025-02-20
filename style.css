@@ -1,17 +1,14 @@
 body {
+
+    overflow: hidden;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('img/bgdr.png');
-    /* Ganti dengan path gambar */
-    background-size: cover;
-    /* Agar gambar menutupi seluruh layar */
-    background-position: center;
-    /* Pusatkan gambar */
-    background-repeat: no-repeat;
-    /* Hindari pengulangan gambar */
-    background-attachment: fixed;
-    /* Biarkan gambar tetap saat di-scroll */
+    background-image: url('img/bgdr.png'); /* Ganti dengan path gambar */
+    background-size: cover; /* Agar gambar menutupi seluruh layar */
+    background-position: center; /* Pusatkan gambar */
+    background-repeat: no-repeat; /* Hindari pengulangan gambar */
+    background-attachment: fixed; /* Biarkan gambar tetap saat di-scroll */
 
 }
 
@@ -259,6 +256,11 @@ body {
     }
 }
 
+
+.txt-rotate{
+    font-size: 100px;
+}
+
 .parallax__title_about {
     text-align: center;
     padding: 50px 40vh;
@@ -364,6 +366,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 10px rgb(255, 255, 255);
     overflow: hidden;
+    margin-top: 130px;
 }
 
 .blur-background {
@@ -1562,7 +1565,8 @@ canvas {
 /* Responsive for screens up to 1300px */
 @media (max-width: 1300px) {
     .parallax__title_about {
-        padding: 0 180px;
+        padding: 0 130px;
+        box-shadow: none;
     }
 
     .parallax__title_about h1 {
@@ -1578,6 +1582,11 @@ canvas {
         padding: -20px;
         flex-direction: column;
         text-align: center;
+    }
+
+    .visimisi{
+        box-shadow: none;
+        padding: 0 130px;
     }
 
     .visimisi .column li{
@@ -1607,37 +1616,12 @@ canvas {
     .button-unggulan {
         margin-left: 1vh;
     }
-
+    .image-card-vip img{
+        width: 300px;
+        padding-top: 30px;
+        margin-top: 30px;
+    }
    
-}
-
-@media(max-width:1024px) and (device-height: 1370px){
-    .popup-content img {
-        width: 800px;
-        margin-left: 1vh;
-    }
-    .close{
-        font-size: 20px;
-    }
-}
-
-@media(max-width:1024px) and (device-height: 600px){
-    .popup-content img {
-        width: 400px;
-        margin-left: 10px;
-    }
-    .close{
-        font-size: 20px;
-    }
-}
-
-
-@media (max-width:  1000px){
-    .popup-content img {
-        width: 800px;
-
-        margin-left: 10px;
-    }
 }
 
 /* Responsive for screens up to 768px */
@@ -1734,7 +1718,7 @@ canvas {
     }
 
     .parallax__title_about {
-        padding: 0 30px;
+        padding: 0 20px;
     }
 
     .parallax__title_about h1 {
@@ -1751,7 +1735,9 @@ canvas {
         flex-direction: column;
         text-align: center;
     }
-
+    .blur-card {
+        margin-top: 170px;
+    }
 
 
     .visimisi .column li{
@@ -1804,6 +1790,7 @@ canvas {
     .visimisi {
         box-shadow:none;
         font-size: 14px;
+        padding: 0 30px;
     }
 
     .image-card-vip{
@@ -1823,10 +1810,16 @@ canvas {
         padding: 40px;
     }
 
-    .carousel-track-visimisi {
-        animation: scroll 20s linear infinite;
-        padding: 20px 0;
+    .carousel-visimisi{
+        margin-top: 110px;
+    }
 
+    .carousel-track-visimisi {
+        animation: scroll 25s linear infinite;
+        padding: 20px 0;
+    }
+    .carousel-track-visimisi img{
+        width: 200px;
     }
 
     .container-img-unggulan {
@@ -1860,7 +1853,7 @@ canvas {
 
     @keyframes scroll {
         from {
-            transform: translateX(10%);
+            transform: translateX(17%);
         }
 
         to {
