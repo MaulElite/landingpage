@@ -1,6 +1,4 @@
 body {
-
-    overflow: hidden;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -1679,9 +1677,11 @@ canvas {
     .header-vip p {
         font-size: 18px;
     }
-
+    .image-card-vip{
+        margin-right: 3vh;
+    }
     .pricing {
-        margin-left: 5vh;
+        margin-left: 6vh;
     }
 
 
@@ -1753,9 +1753,13 @@ canvas {
     }
 
     .cta-button-vip {
-        font-size: 6px;
+        font-size: 10px;
         font-weight: bold;
-        width: 50px;
+    }
+
+    .pricing a{
+        width: auto;
+        padding: 10px 15px;
     }
 
     .content-left {
