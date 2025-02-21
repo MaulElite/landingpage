@@ -2,11 +2,16 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('img/bgdr.png'); /* Ganti dengan path gambar */
-    background-size: cover; /* Agar gambar menutupi seluruh layar */
-    background-position: center; /* Pusatkan gambar */
-    background-repeat: no-repeat; /* Hindari pengulangan gambar */
-    background-attachment: fixed; /* Biarkan gambar tetap saat di-scroll */
+    background-image: url('img/bgdr.png');
+    /* Ganti dengan path gambar */
+    background-size: cover;
+    /* Agar gambar menutupi seluruh layar */
+    background-position: center;
+    /* Pusatkan gambar */
+    background-repeat: no-repeat;
+    /* Hindari pengulangan gambar */
+    background-attachment: fixed;
+    /* Biarkan gambar tetap saat di-scroll */
 
 }
 
@@ -33,16 +38,7 @@ body {
     overflow: hidden;
 }
 
-.parallax__content {
-    padding: var(--section-padding) var(--container-padding);
-    justify-content: center;
-    align-items: center;
-    min-height: 100svh;
-    display: flex;
-    position: relative;
-    color: #eaeaea;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 164, 204) 90%);
-}
+
 
 .cover {
     object-fit: cover;
@@ -255,53 +251,97 @@ body {
 }
 
 
-.txt-rotate{
+.txt-rotate {
     font-size: 100px;
 }
 
+.parallax__content {
+    margin: 100px 0 0 0;
+    padding: 0 0 200px 0;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    display: flex;
+    position: relative;
+    color: #eaeaea;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 164, 204) 90%);
+}
+
 .parallax__title_about {
-    text-align: center;
-    padding: 50px 40vh;
+    display: flex;
+    padding: 50px 30vh;
     margin-bottom: .1em;
-    font-size: 30px;
+    margin: 0;
+    font-size: 60px;
     position: relative;
     color: rgb(255, 255, 255);
 }
 
 
+
+.parallax__title_about h1 {
+    font-size: 5vh;
+}
+
+
+.title_about h2 {
+    margin-left: 50px;
+    margin-top: -7px;
+    font-size: 150px;
+}
+
+.parallax__title_about p {
+    margin: 48px 0 0 50px;
+    font-size: 21px;
+
+}
+
 .visimisi {
-    justify-content: center;
-    gap: 20px;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 22px;
+    margin:  -150px 0 0 0;
+    padding: 0 300px;
 }
 
 .column-visimisi {
-    flex: 1;
-    text-align: center;
+    display: flex;
 }
 
-.column-visimisi p {
-    margin-left: 20px;
+.column-visimisi h2 {
+font-size: 40px;
+
+}
+
+.column-visimisi h6{
+    font-size: 80px;
+    margin: 0  0 0 215px;
+}
+.column-visimisi p{
+    font-size: 20px;
+    margin: 25px 0 0 60px;
+}
+
+.column {
+    display: flex;
+}
+
+.column span{
+    display: flex;
+    flex-direction: row;
 }
 
 .column h2 {
-    margin-bottom: 10px;
-    text-align: center;
+    font-size: 40px;
 }
 
-.column ul {
-    list-style-type: disc;
-    padding-left: 20px;
+.column h6{
+    font-size: 80px;
+    margin: 0  0 0 208px;
 }
 
-.column li {
-    margin: 10px 0;
+.column li{
+    font-size: 17px;
+    margin: 15px 0 0 60px;
 }
+
 
 
 
@@ -347,14 +387,8 @@ body {
     }
 }
 
-.parallax__title_about h1 {
-    font-size: 5vh;
-    text-decoration: overline;
-}
 
-.parallax__title_about p {
-    font-size: 23px;
-}
+
 
 .blur-card {
     position: relative;
@@ -394,13 +428,8 @@ body {
 
 
 
-.visimisi {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 0.6s ease-out, transform 3s ease-out;
-}
 
-.visimisi.visible {
+.visible {
     opacity: 1;
     transform: translateY(0);
 }
@@ -729,7 +758,7 @@ body {
     backdrop-filter: blur(20px);
     transition: background 0.10s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     color: #eaeaea;
-   
+
 }
 
 .card-promo:hover {
@@ -905,6 +934,7 @@ body {
     height: 800px;
     transition: .2s linear;
 }
+
 .card-unggulan img:hover {
     transform: scale(1.05);
 }
@@ -918,7 +948,7 @@ body {
     border-radius: 15px;
     font-size: 15px;
     transition: all 0.6s ease;
-    background:linear-gradient(90deg, #ff9f43, #ffd000, #b4852f);
+    background: linear-gradient(90deg, #ff9f43, #ffd000, #b4852f);
     border: #00000000;
     cursor: pointer;
     font-weight: 600;
@@ -1163,7 +1193,7 @@ p+p {
     border-radius: 15px;
     font-size: 15px;
     transition: all 0.6s ease;
-    background:linear-gradient(90deg, #ff9f43, #ffd000, #b4852f);
+    background: linear-gradient(90deg, #ff9f43, #ffd000, #b4852f);
     border: #00000000;
     cursor: pointer;
     font-weight: 600;
@@ -1562,17 +1592,26 @@ canvas {
 
 /* Responsive for screens up to 1300px */
 @media (max-width: 1300px) {
-    .parallax__title_about {
-        padding: 0 130px;
-        box-shadow: none;
+    .title_about {
+        display: flex;
+        padding: 70px 100px 70px 100px;
     }
 
     .parallax__title_about h1 {
-        font-size: 4vh;
+        font-size: 5vh;
+        text-decoration: none;
+
+    }
+
+    .parallax__title_about h2 {
+        margin-left: 33px;
+        margin-top: -10px;
     }
 
     .parallax__title_about p {
-        font-size: 20px;
+        text-align: start;
+        padding: 0 0;
+        margin: 20px 0 0 30px;
     }
 
     .parallax__header,
@@ -1582,12 +1621,8 @@ canvas {
         text-align: center;
     }
 
-    .visimisi{
-        box-shadow: none;
-        padding: 0 130px;
-    }
 
-    .visimisi .column li{
+.column li {
         text-align: start;
     }
 
@@ -1614,28 +1649,108 @@ canvas {
     .button-unggulan {
         margin-left: 1vh;
     }
-    .image-card-vip img{
+
+    .image-card-vip img {
         width: 300px;
         padding-top: 30px;
         margin-top: 30px;
     }
-   
+
 }
 
 /* Responsive for screens up to 768px */
-@media (max-width: 768px) {
+@media (max-width: 920px) {
 
     .parallax__title,
     .parallax__title_2 {
         font-size: 35px;
     }
 
-    .visimisi{
-        box-shadow: none;
+    .parallax__title_about {
+        display: flex;
+        padding: 50px 100px;
+        margin-bottom: .1em;
+        margin: 0;
+        font-size: 60px;
+        position: relative;
+        color: rgb(255, 255, 255);
     }
-    .visimisi .column li{
-        text-align: start;
+    
+    
+    
+    .parallax__title_about h1 {
+        font-size: 3vh;
     }
+    
+    
+    .parallax__title_about h2 {
+        margin-left: 50px;
+        margin-top: -7px;
+        font-size: 150px;
+    }
+    
+    .parallax__title_about p {
+        margin: 30px 0 0 50px;
+        font-size: 15px;
+    
+    }
+
+    
+.visimisi {
+    
+    margin:  0 0 0 0;
+    padding: 0 80px;
+}
+
+.column-visimisi {
+    flex-direction: column;
+}
+
+.column-visimisi h2 {
+font-size: 25px;
+margin: -80px 0 0 0;
+
+}
+
+.column-visimisi h6{
+    font-size: 80px;
+    margin: -30px  0 0 15px;
+    transform: rotate(90deg);
+}
+.column-visimisi p{
+    font-size: 15px;
+    margin: -30px 0 0 0;
+    padding: 0 50px;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0 0 0;
+}
+
+
+
+.column h2 {
+    font-size: 25px;
+    margin: 40px 0 0 0;
+}
+
+.column h6{
+    font-size: 80px;
+    margin: 0 0 0 20px;
+}
+.column span {
+    margin: 0 0 0 20px;
+}
+    
+}
+.column li{
+    font-size: 14px;
+    margin: 0 0 0 20px;
+}
+
+    
 
     .slide-content {
         margin: 0 10px;
@@ -1677,9 +1792,11 @@ canvas {
     .header-vip p {
         font-size: 18px;
     }
-    .image-card-vip{
+
+    .image-card-vip {
         margin-right: 3vh;
     }
+
     .pricing {
         margin-left: 6vh;
     }
@@ -1700,6 +1817,7 @@ canvas {
         height: 680px;
         margin: 0 75px;
     }
+
     .card-unggulan .pop-up-image img {
         width: 95%;
     }
@@ -1717,38 +1835,107 @@ canvas {
         font-size: 50px;
     }
 
-    .parallax__title_about {
-        padding: 0 20px;
-    }
-
-    .parallax__title_about h1 {
-        font-size: 3vh;
-    }
-
-    .parallax__title_about p {
-        font-size: 15px;
-    }
+   
 
     .parallax__header,
     .parallax__content {
         padding: 25px 30px 30px 30px;
-        flex-direction: column;
         text-align: center;
     }
+
+    .parallax__title_about {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px 0 20px;
+    }
+
+    .title_about h1 {
+        font-size: 4vh;
+        text-decoration: none;
+
+    }
+
+    .parallax__title_about h2 {
+        margin-left: 33px;
+        margin-top: -80px;
+        transform: rotate(90deg);
+    }
+
+    .parallax__title_about p {
+        text-align: center;
+        font-size: 13px;
+        padding: 0 0;
+        margin: -180px 0 0 0;
+    }
+
+    .visimisi {
+
+        margin:  0 0 0 0;
+        padding: 0 0;
+    }
+    
+    .column-visimisi {
+        padding: 0 40px 0 40px;
+        flex-direction: column;
+    }
+    
+    .column-visimisi h2 {
+    font-size: 25px;
+    
+    }
+    
+    .column-visimisi h6{
+        font-size: 80px;
+        margin: -60px  0 0 10px;
+        transform: rotate(90deg);
+    }
+    .column-visimisi p{
+        font-size: 11px;
+        margin: -30px 0 0 0;
+    }
+    
+    .column {
+        flex-direction: column;
+    }
+    
+    .column h2 {
+        font-size: 25px;
+    }
+    
+    .column h6{
+        font-size: 80px;
+        margin: -60px 0 0 10px;
+        transform: rotate(90deg);
+    }
+
+    .column span{
+        margin-top: -20px;
+        flex-direction: column;
+    }
+    
+    .column li{
+        padding: 0 35px 0 35px;
+        font-size: 11px;
+        line-height: 15px;
+        list-style:inside;
+        margin: -2px 0 0 0;
+    }
+    .column ul{
+        margin-top: -26px;
+    }
+    
+
     .blur-card {
         margin-top: 170px;
     }
 
 
-    .visimisi .column li{
-        text-align: start;
-    }
 
     .benefits {
         margin-left: -5vh;
     }
 
-    .benefits ul li{
+    .benefits ul li {
         font-size: 17px;
     }
 
@@ -1757,7 +1944,7 @@ canvas {
         font-weight: bold;
     }
 
-    .pricing a{
+    .pricing a {
         width: auto;
         padding: 10px 15px;
     }
@@ -1780,9 +1967,10 @@ canvas {
     }
 
 
- .container-kontak{
-    margin-left: 18px;
- }
+    .container-kontak {
+        margin-left: 18px;
+    }
+
     .column li {
         text-align: none;
     }
@@ -1791,17 +1979,12 @@ canvas {
         font-size: 33px;
     }
 
-    .visimisi {
-        box-shadow:none;
-        font-size: 14px;
-        padding: 0 30px;
-    }
-
-    .image-card-vip{
+    .image-card-vip {
         padding-top: 20px;
         margin-left: 7px;
     }
-    .image-card-vip img{
+
+    .image-card-vip img {
         width: 30vh;
     }
 
@@ -1814,7 +1997,7 @@ canvas {
         padding: 40px;
     }
 
-    .carousel-visimisi{
+    .carousel-visimisi {
         margin-top: 110px;
     }
 
@@ -1822,7 +2005,8 @@ canvas {
         animation: scroll 25s linear infinite;
         padding: 20px 0;
     }
-    .carousel-track-visimisi img{
+
+    .carousel-track-visimisi img {
         width: 200px;
     }
 
@@ -1837,6 +2021,7 @@ canvas {
         height: 380px;
         margin: 0 28px;
     }
+
     .container-unggulan {
         width: 100%;
     }
@@ -1851,7 +2036,7 @@ canvas {
         height: 450px;
     }
 
-    .site-footer{
+    .site-footer {
         padding-bottom: 20px;
     }
 
@@ -1866,4 +2051,3 @@ canvas {
     }
 
 }
-
