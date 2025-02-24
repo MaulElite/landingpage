@@ -417,7 +417,7 @@ body {
 
 .parallax__title_about {
     opacity: 0;
-    transform: translateX(500px);
+    transform: translateX(100px);
     transition: opacity 0.6s ease-out, transform 3s ease-out;
 }
 
@@ -1757,6 +1757,7 @@ canvas {
     }
 
     .column-visimisi p {
+        text-align: center;
         font-size: 15px;
         margin: -30px 0 0 0;
         padding: 0 50px;
@@ -1785,6 +1786,7 @@ canvas {
     }
 
     .column li {
+        text-align: start;
         font-size: 14px;
         margin: 0 0 0 20px;
     }
@@ -1925,7 +1927,7 @@ canvas {
 
     .column-visimisi h6 {
         font-size: 80px;
-        margin: -30px 0 0 15px;
+        margin: -30px 0 0 10px;
         transform: rotate(90deg);
     }
 
@@ -1947,7 +1949,7 @@ canvas {
 
     .column h6 {
         font-size: 80px;
-        margin: -60px 0 0 15px;
+        margin: -60px 0 0 10px;
         transform: rotate(90deg);
     }
 
