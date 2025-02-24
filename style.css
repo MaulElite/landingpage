@@ -1893,13 +1893,13 @@ canvas {
     .parallax__title_about h1 {
         font-size: 4vh;
         text-decoration: none;
+        margin:  20px 0 0 0;
 
     }
 
     .parallax__title_about h2 {
-        text-align: center;
-        margin-left: 33px;
         margin-top: -70px;
+        margin-left: 25px ;
         transform: rotate(90deg);
     }
 
