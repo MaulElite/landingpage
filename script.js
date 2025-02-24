@@ -37,6 +37,9 @@ lenis.on('scroll', ScrollTrigger.update);
 gsap.ticker.add((time) => {lenis.raf(time * 1000);});
 gsap.ticker.lagSmoothing(0);
 
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const aboutTitle = document.querySelector(".parallax__title_about");
 
@@ -57,22 +60,41 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const image = document.querySelector(".visimisi");
+  const column_visimisi = document.querySelector(".column-visimisi");
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          image.classList.add("visible"); 
+          column_visimisi.classList.add("visible"); 
         } else {
-          image.classList.remove("visible");
+          column_visimisi.classList.remove("visible");
         }
       });
     },
     { threshold: 0.2 } 
   );
 
-  observer.observe(image);
+  observer.observe(column_visimisi);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const column = document.querySelector(".column");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          column.classList.add("visible"); 
+        } else {
+          column.classList.remove("visible");
+        }
+      });
+    },
+    { threshold: 0.2 } 
+  );
+
+  observer.observe(column);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -112,6 +134,81 @@ document.addEventListener("DOMContentLoaded", function () {
 
   observer.observe(pricing);
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const card_promo = document.querySelector(".card-promo");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          card_promo.classList.add("visible"); 
+        } else {
+          card_promo.classList.remove("visible");
+        }
+      });
+    },
+    { threshold: 0.2 } 
+  );
+
+  observer.observe(card_promo);
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const card_promo2 = document.querySelector(".card-promo2");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          card_promo2.classList.add("visible"); 
+        } else {
+          card_promo2.classList.remove("visible");
+        }
+      });
+    },
+    { threshold: 0.2 } 
+  );
+
+  observer.observe(card_promo2);
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const card_promo3 = document.querySelector(".card-promo3");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          card_promo3.classList.add("visible"); 
+        } else {
+          card_promo3.classList.remove("visible");
+        }
+      });
+    },
+    { threshold: 0.2 } 
+  );
+
+  observer.observe(card_promo3);
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const container_unggulan = document.querySelector(".container-unggulan");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          container_unggulan.classList.add("visible"); 
+        } else {
+          container_unggulan.classList.remove("visible");
+        }
+      });
+    },
+    { threshold: 0.2 } 
+  );
+
+  observer.observe(container_unggulan);
+});
+
 
 
 // Profile js
