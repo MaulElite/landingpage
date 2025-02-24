@@ -13,7 +13,7 @@ body {
     background-attachment: fixed;
     /* Biarkan gambar tetap saat di-scroll */
     image-rendering: optimizeSpeed;
-
+    height: 100vh;
 }
 
 
