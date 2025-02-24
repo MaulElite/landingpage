@@ -284,7 +284,7 @@ body {
 }
 
 
-.title_about h2 {
+.parallax__title_about h2 {
     margin-left: 50px;
     margin-top: -7px;
     font-size: 150px;
@@ -297,7 +297,7 @@ body {
 }
 
 .visimisi {
-    margin:  -150px 0 0 0;
+    margin: -150px 0 0 0;
     padding: 0 300px;
 }
 
@@ -306,15 +306,16 @@ body {
 }
 
 .column-visimisi h2 {
-font-size: 40px;
+    font-size: 40px;
 
 }
 
-.column-visimisi h6{
+.column-visimisi h6 {
     font-size: 80px;
-    margin: 0  0 0 215px;
+    margin: 0 0 0 215px;
 }
-.column-visimisi p{
+
+.column-visimisi p {
     font-size: 20px;
     margin: 25px 0 0 60px;
 }
@@ -323,7 +324,7 @@ font-size: 40px;
     display: flex;
 }
 
-.column span{
+.column span {
     display: flex;
     flex-direction: row;
 }
@@ -332,12 +333,12 @@ font-size: 40px;
     font-size: 40px;
 }
 
-.column h6{
+.column h6 {
     font-size: 80px;
-    margin: 0  0 0 208px;
+    margin: 0 0 0 208px;
 }
 
-.column li{
+.column li {
     font-size: 17px;
     margin: 15px 0 0 60px;
 }
@@ -416,14 +417,14 @@ font-size: 40px;
 
 .parallax__title_about {
     opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 0.6s ease-out, transform 4s ease-out;
+    transform: translateX(500px);
+    transition: opacity 0.6s ease-out, transform 3s ease-out;
 }
 
 
 .parallax__title_about.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 
@@ -431,7 +432,7 @@ font-size: 40px;
 
 .visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 
@@ -1592,13 +1593,21 @@ canvas {
 
 /* Responsive for screens up to 1300px */
 @media (max-width: 1300px) {
-    .title_about {
+
+    .parallax__header,
+    .parallax__content {
+        padding: -20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .parallax__title_about {
         display: flex;
-        padding: 70px 100px 70px 100px;
+        padding: 70px 270px;
     }
 
     .parallax__title_about h1 {
-        font-size: 5vh;
+        font-size: 3vh;
         text-decoration: none;
 
     }
@@ -1610,20 +1619,48 @@ canvas {
 
     .parallax__title_about p {
         text-align: start;
+        font-size: 20px;
         padding: 0 0;
         margin: 20px 0 0 30px;
     }
 
-    .parallax__header,
-    .parallax__content {
-        padding: -20px;
-        flex-direction: column;
-        text-align: center;
+
+    .column-visimisi h2 {
+        font-size: 40px;
+        margin: 30px 0 0 30px;
+    }
+
+    .column-visimisi h6 {
+        margin: 0 0 0 120px;
+
+    }
+
+    .column-visimisi p {
+        text-align: start;
+        margin: 10px 0 0 37px;
     }
 
 
-.column li {
-        text-align: start;
+    .column {
+    }
+
+    .column h2 {
+        font-size: 40px;
+        margin: 50px 0 0 30px;
+    }
+
+    .column h6 {
+        margin: 20px 0 0 113px;
+    }
+
+
+    .column span {
+        margin: 20px 0 0 0;
+        
+    }
+
+    .column li {
+        text-align: none;
     }
 
 
@@ -1668,89 +1705,91 @@ canvas {
 
     .parallax__title_about {
         display: flex;
-        padding: 50px 100px;
+        padding: 50px 65px;
         margin-bottom: .1em;
         margin: 0;
         font-size: 60px;
         position: relative;
         color: rgb(255, 255, 255);
     }
-    
-    
-    
+
+
+
     .parallax__title_about h1 {
         font-size: 3vh;
+        margin: 60px 0 0 0;
     }
-    
-    
+
+
     .parallax__title_about h2 {
         margin-left: 50px;
         margin-top: -7px;
         font-size: 150px;
     }
-    
+
     .parallax__title_about p {
-        margin: 30px 0 0 50px;
+        margin: 20px 0 0 50px;
         font-size: 15px;
-    
+
     }
 
-    
-.visimisi {
-    
-    margin:  0 0 0 0;
-    padding: 0 80px;
-}
 
-.column-visimisi {
-    flex-direction: column;
-}
+    .visimisi {
 
-.column-visimisi h2 {
-font-size: 25px;
-margin: -80px 0 0 0;
+        margin: 0 0 0 0;
+        padding: 0 80px;
+    }
 
-}
+    .column-visimisi {
+        flex-direction: column;
+    }
 
-.column-visimisi h6{
-    font-size: 80px;
-    margin: -30px  0 0 15px;
-    transform: rotate(90deg);
-}
-.column-visimisi p{
-    font-size: 15px;
-    margin: -30px 0 0 0;
-    padding: 0 50px;
-}
+    .column-visimisi h2 {
+        font-size: 25px;
+        margin: -120px 0 0 0;
 
-.column {
-    display: flex;
-    flex-direction: row;
-    margin: 50px 0 0 0;
-}
+    }
+
+    .column-visimisi h6 {
+        font-size: 80px;
+        margin: -30px 0 0 15px;
+        transform: rotate(90deg);
+    }
+
+    .column-visimisi p {
+        font-size: 15px;
+        margin: -30px 0 0 0;
+        padding: 0 50px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: row;
+        margin: 50px 0 0 0;
+    }
 
 
 
-.column h2 {
-    font-size: 25px;
-    margin: 40px 0 0 0;
-}
+    .column h2 {
+        font-size: 25px;
+        margin: 40px 0 0 0;
+    }
 
-.column h6{
-    font-size: 80px;
-    margin: 0 0 0 20px;
-}
-.column span {
-    margin: 0 0 0 20px;
-}
-    
-}
-.column li{
-    font-size: 14px;
-    margin: 0 0 0 20px;
-}
+    .column h6 {
+        font-size: 80px;
+        margin: 0 0 0 20px;
+    }
 
-    
+    .column span {
+        margin: 0 0 0 20px;
+    }
+
+    .column li {
+        font-size: 14px;
+        margin: 0 0 0 20px;
+    }
+
+
 
     .slide-content {
         margin: 0 10px;
@@ -1835,7 +1874,7 @@ margin: -80px 0 0 0;
         font-size: 50px;
     }
 
-   
+
 
     .parallax__header,
     .parallax__content {
@@ -1849,7 +1888,7 @@ margin: -80px 0 0 0;
         padding: 0 20px 0 20px;
     }
 
-    .title_about h1 {
+    .parallax__title_about h1 {
         font-size: 4vh;
         text-decoration: none;
 
@@ -1857,7 +1896,7 @@ margin: -80px 0 0 0;
 
     .parallax__title_about h2 {
         margin-left: 33px;
-        margin-top: -80px;
+        margin-top: -70px;
         transform: rotate(90deg);
     }
 
@@ -1870,60 +1909,62 @@ margin: -80px 0 0 0;
 
     .visimisi {
 
-        margin:  0 0 0 0;
+        margin: 0 0 0 0;
         padding: 0 0;
     }
-    
+
     .column-visimisi {
         padding: 0 40px 0 40px;
         flex-direction: column;
     }
-    
+
     .column-visimisi h2 {
-    font-size: 25px;
-    
-    }
-    
-    .column-visimisi h6{
-        font-size: 80px;
-        margin: -60px  0 0 10px;
-        transform: rotate(90deg);
-    }
-    .column-visimisi p{
-        font-size: 11px;
-        margin: -30px 0 0 0;
-    }
-    
-    .column {
-        flex-direction: column;
-    }
-    
-    .column h2 {
         font-size: 25px;
+        margin: 30px 0 0 0;
     }
-    
-    .column h6{
+
+    .column-visimisi h6 {
         font-size: 80px;
-        margin: -60px 0 0 10px;
+        margin: -30px 0 0 15px;
         transform: rotate(90deg);
     }
 
-    .column span{
-        margin-top: -20px;
+    .column-visimisi p {
+        font-size: 11px;
+        margin: -30px 0 0 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .column {
         flex-direction: column;
     }
-    
-    .column li{
+
+    .column h2 {
+        font-size: 25px;
+        margin: 0 0 30px 0;
+    }
+
+    .column h6 {
+        font-size: 80px;
+        margin: -60px 0 0 15px;
+        transform: rotate(90deg);
+    }
+
+    .column span {
+        margin-top: -30px;
+        flex-direction: column;
+        margin-right: 15px;
+        text-align:left;
+    }
+
+    .column li {
         padding: 0 35px 0 35px;
         font-size: 11px;
         line-height: 15px;
-        list-style:inside;
-        margin: -2px 0 0 0;
+        margin: 10px 0 10px 0;
     }
-    .column ul{
-        margin-top: -26px;
-    }
-    
+
 
     .blur-card {
         margin-top: 170px;
@@ -1971,9 +2012,6 @@ margin: -80px 0 0 0;
         margin-left: 18px;
     }
 
-    .column li {
-        text-align: none;
-    }
 
     .title-master {
         font-size: 33px;
