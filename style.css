@@ -256,8 +256,8 @@ body {
 }
 
 .parallax__content {
-    margin: 100px 0 0 0;
-    padding: 0 0 200px 0;
+    margin: 120px 0 0 0;
+    padding: 0  100px ;
     justify-content: center;
     align-items: center;
     height: auto;
@@ -269,7 +269,7 @@ body {
 
 .parallax__title_about {
     display: flex;
-    padding: 50px 30vh;
+    padding: 50px 200px;
     margin-bottom: .1em;
     margin: 0;
     font-size: 60px;
@@ -281,23 +281,18 @@ body {
 
 .parallax__title_about h1 {
     font-size: 5vh;
+    margin: 25px 0 0 65px;
 }
 
-
-.parallax__title_about h2 {
-    margin-left: 50px;
-    margin-top: -7px;
-    font-size: 150px;
-}
 
 .parallax__title_about p {
-    margin: 48px 0 0 50px;
+    margin:30px 0 0 70px;
     font-size: 21px;
 
 }
 
 .visimisi {
-    margin: -150px 0 0 0;
+    margin: 0 0 0 0;
     padding: 0 300px;
 }
 
@@ -307,40 +302,32 @@ body {
 
 .column-visimisi h2 {
     font-size: 40px;
-
-}
-
-.column-visimisi h6 {
-    font-size: 80px;
-    margin: 0 0 0 215px;
+    margin: 0 0 0 50px;
 }
 
 .column-visimisi p {
     font-size: 20px;
-    margin: 25px 0 0 60px;
+    margin: 0 0 0 157px;
 }
 
 .column {
     display: flex;
-}
-
-.column span {
-    display: flex;
-    flex-direction: row;
+    margin: 70px 0 0 0;
 }
 
 .column h2 {
     font-size: 40px;
+    margin: 0 0 0 48px;
 }
-
-.column h6 {
-    font-size: 80px;
-    margin: 0 0 0 208px;
+.column span {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 140px;
 }
 
 .column li {
     font-size: 17px;
-    margin: 15px 0 0 60px;
+    margin: 0 10px 0 10px;
 }
 
 
@@ -1594,54 +1581,56 @@ canvas {
 /* Responsive for screens up to 1300px */
 @media (max-width: 1300px) {
 
-    .parallax__header,
     .parallax__content {
-        padding: -20px;
-        flex-direction: column;
+        padding: 200px 20px;
         text-align: center;
     }
 
     .parallax__title_about {
-        display: flex;
-        padding: 70px 270px;
+        padding: 0 130px ;
+        flex-direction: column;
     }
 
     .parallax__title_about h1 {
-        font-size: 3vh;
+        font-size: 5vh;
         text-decoration: none;
+        
 
     }
 
-    .parallax__title_about h2 {
-        margin-left: 33px;
-        margin-top: -10px;
-    }
+
 
     .parallax__title_about p {
-        text-align: start;
-        font-size: 20px;
+        text-align: center;
+        font-size: 22px;
         padding: 0 0;
-        margin: 20px 0 0 30px;
+        margin: 10px 0 0 0;
     }
 
+    .visimisi {
+        padding: 0 0 0 0;
+    }
+
+    .column-visimisi {
+        padding:0 150px;
+        margin: 60px 0 50px 0;
+        flex-direction: column;
+    }
 
     .column-visimisi h2 {
         font-size: 40px;
-        margin: 30px 0 0 30px;
-    }
-
-    .column-visimisi h6 {
-        margin: 0 0 0 120px;
-
+        margin: 0 0 0 0;
     }
 
     .column-visimisi p {
-        text-align: start;
-        margin: 10px 0 0 37px;
+        font-size: 22px;
+        margin: 10px 0 0 0;
     }
 
 
     .column {
+        flex-direction: column;
+        margin:  -10px 0 0 0;
     }
 
     .column h2 {
@@ -1649,18 +1638,17 @@ canvas {
         margin: 50px 0 0 30px;
     }
 
-    .column h6 {
-        margin: 20px 0 0 113px;
-    }
 
 
     .column span {
         margin: 20px 0 0 0;
+        padding: 0 50px;
         
     }
 
     .column li {
-        text-align: none;
+        font-size: 20px;
+        text-align: start;
     }
 
 
@@ -1705,7 +1693,7 @@ canvas {
 
     .parallax__title_about {
         display: flex;
-        padding: 50px 65px;
+        padding: 50px 70px;
         margin-bottom: .1em;
         margin: 0;
         font-size: 60px;
@@ -1717,27 +1705,21 @@ canvas {
 
     .parallax__title_about h1 {
         font-size: 3vh;
-        margin: 60px 0 0 0;
+        margin: 0 0 0 20px;
     }
 
 
-    .parallax__title_about h2 {
-        margin-left: 50px;
-        margin-top: -7px;
-        font-size: 150px;
-    }
 
     .parallax__title_about p {
-        margin: 20px 0 0 50px;
+        margin: 0 0 0 60px;
         font-size: 15px;
-
     }
 
 
     .visimisi {
 
         margin: 0 0 0 0;
-        padding: 0 80px;
+        padding: 0 0;
     }
 
     .column-visimisi {
@@ -1746,49 +1728,38 @@ canvas {
 
     .column-visimisi h2 {
         font-size: 25px;
-        margin: -120px 0 0 0;
+        margin: -70px 0 0 0;
 
-    }
-
-    .column-visimisi h6 {
-        font-size: 80px;
-        margin: -30px 0 0 15px;
-        transform: rotate(90deg);
     }
 
     .column-visimisi p {
         text-align: center;
         font-size: 15px;
-        margin: -30px 0 0 0;
-        padding: 0 50px;
+        margin: 10px 0 0 0;
+        padding: 0 0;
     }
 
     .column {
-        display: flex;
-        flex-direction: row;
-        margin: 50px 0 0 0;
+        flex-direction: column;
+        margin: 60px 0 0 0;
+        padding: 0 70px;
     }
-
 
 
     .column h2 {
         font-size: 25px;
-        margin: 40px 0 0 0;
+        margin: 0 0 0 0;
     }
 
-    .column h6 {
-        font-size: 80px;
-        margin: 0 0 0 20px;
-    }
 
     .column span {
-        margin: 0 0 0 20px;
+        margin: 10px 0 0 30px;
     }
 
     .column li {
         text-align: start;
         font-size: 14px;
-        margin: 0 0 0 20px;
+        margin: 0 5px 0 5px;
     }
 
 
@@ -1893,50 +1864,36 @@ canvas {
     .parallax__title_about h1 {
         font-size: 4vh;
         text-decoration: none;
-        margin:  20px 0 0 0;
-
-    }
-
-    .parallax__title_about h2 {
-        margin-top: -70px;
-        margin-left: 25px ;
-        transform: rotate(90deg);
+        margin: 0 0 0 0;
     }
 
     .parallax__title_about p {
         text-align: center;
         font-size: 13px;
         padding: 0 0;
-        margin: -180px 0 0 0;
+        margin: 10px 0 0 0;
     }
 
     .visimisi {
-
         margin: 0 0 0 0;
         padding: 0 0;
     }
 
     .column-visimisi {
-        padding: 0 40px 0 40px;
+        padding: 0 40px 40px;
         flex-direction: column;
     }
 
     .column-visimisi h2 {
         text-align: center;
         font-size: 25px;
-        margin: 30px 0 0 0;
+        margin: -30px 0 0 0;
     }
 
-    .column-visimisi h6 {
-        text-align: center;
-        font-size: 80px;
-        margin: -30px 0 0 10px;
-        transform: rotate(90deg);
-    }
 
     .column-visimisi p {
-        font-size: 11px;
-        margin: -30px 0 0 0;
+        font-size: 13px;
+        margin: 0 0 0 0;
         text-align: center;
         padding: 10px 0;
     }
@@ -1947,28 +1904,20 @@ canvas {
 
     .column h2 {
         font-size: 25px;
-        margin: 0 0 30px 0;
+        margin: -50px 0 0 0;
     }
 
-    .column h6 {
-        text-align: center;
-        font-size: 80px;
-        margin: -60px 0 0 10px;
-        transform: rotate(90deg);
-    }
 
     .column span {
-        margin-top: -30px;
         flex-direction: column;
-        margin-right: 15px;
-        text-align:left;
+        margin: 0 0 0 30px;
     }
 
     .column li {
-        padding: 0 35px 0 35px;
+        padding: 0 0;
         font-size: 11px;
         line-height: 15px;
-        margin: 10px 0 10px 0;
+        margin: 10px -80px 10px -100px;
     }
 
 
