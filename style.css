@@ -1,18 +1,18 @@
-body {
-    font-family: 'Poppins', sans-serif;
+html, body {
     margin: 0;
     padding: 0;
-    background-image: url('img/bgdr.png');
-    /* Ganti dengan path gambar */
+    font-family: 'Poppins', sans-serif;
+    background: url('img/bgdr.png') no-repeat center center fixed;
     background-size: cover;
-    /* Agar gambar menutupi seluruh layar */
-    background-position: center;
-    /* Pusatkan gambar */
-    background-repeat: no-repeat;
-    /* Hindari pengulangan gambar */
-    background-attachment: fixed;
-    /* Biarkan gambar tetap saat di-scroll */
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
 
+/* Biarkan body membentang sepanjang semua kontennya */
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 
