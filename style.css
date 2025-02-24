@@ -2,6 +2,12 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+   
+
+}
+
+
+.wrapper_body{
     background-image: url('img/bgdr.png');
     /* Ganti dengan path gambar */
     background-size: cover;
@@ -12,9 +18,7 @@ body {
     /* Hindari pengulangan gambar */
     background-attachment: fixed;
     /* Biarkan gambar tetap saat di-scroll */
-
 }
-
 
 
 .osmo-icon-svg {
