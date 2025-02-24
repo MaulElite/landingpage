@@ -8,8 +8,6 @@ body {
     /* Agar gambar menutupi seluruh layar */
     background-position: center;
     /* Pusatkan gambar */
-    background-repeat: no-repeat;
-    /* Hindari pengulangan gambar */
     background-attachment: fixed;
     /* Biarkan gambar tetap saat di-scroll */
 
