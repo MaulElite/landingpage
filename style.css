@@ -1683,7 +1683,7 @@ canvas {
 
 }
 
-/* Responsive for screens up to 768px */
+/* Responsive for screens up to 920px */
 @media (max-width: 920px) {
 
     .parallax__title,
@@ -1979,6 +1979,10 @@ canvas {
 
     .image-card-vip img {
         width: 30vh;
+    }
+
+    .button-kontak {
+        margin: 0 0 0 10px;
     }
 
     .pricing {
