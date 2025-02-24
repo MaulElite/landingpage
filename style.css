@@ -8,6 +8,8 @@ body {
     /* Agar gambar menutupi seluruh layar */
     background-position: center;
     /* Pusatkan gambar */
+    background-repeat: no-repeat;
+    /* Hindari pengulangan gambar */
     background-attachment: fixed;
     /* Biarkan gambar tetap saat di-scroll */
 
@@ -21,7 +23,6 @@ body {
 }
 
 .parallax__header {
-    z-index: 2;
     padding: var(--section-padding) var(--container-padding);
     justify-content: center;
     align-items: center;
