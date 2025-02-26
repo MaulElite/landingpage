@@ -1065,74 +1065,13 @@ body {
 
 
 
-/* .container-unggulan {
-    padding: 5vh 20vh 5vh 20vh;
-
-}
-
-.container-img-unggulan {
-    padding: 70px 0 0 0;
-    box-shadow: 0 4px 8px rgba(0, 164, 204);
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    width: 70vh;
-    margin: 0 0 0 45vh;
-}
-
-.container-img-unggulan img {
-    height: 700px;
-    width: 500px;
-    margin: 0 0 0 9vh;
-}
-
-.container-img-unggulan:hover {
-
-    transform: scale(1.05);
-}
-.button-unggulan {
-    margin: 0 0 0 70px;
-    padding: 15px;
-    border-radius: 15px;
-    font-size: 13px;
-    transition: all 0.6s ease;
-    background-color: gray;
-    border: #00000000;
-    background: linear-gradient(90deg, #ff9f43, #ffd000, #b4852f);
-}
-
-.button-unggulan:hover {
-    padding: 17px;
-    color: rgb(255, 255, 255);
-}
-
-.button-unggulan a {
-    padding: 0 7px;
-    text-decoration: none;
-    transition: all 0.1s ease;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* kontak css */
 
 
 
 .container-kontak1 {
-    /* background: linear-gradient(0deg, rgba(0, 164, 204) 0%, rgb(255, 255, 255) 58%); */
     padding: 200px 100px 0 100px;
-    /* background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px); */
     z-index: -1;
 }
 
@@ -1345,7 +1284,6 @@ canvas {
 
 .container-testimonial-body {
     padding: 32px;
-    /* background: linear-gradient(0deg, rgb(255, 255, 255)0%, rgba(0, 164, 204)  58%); */
 }
 
 
