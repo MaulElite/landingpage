@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger: triggerElement,
         start: "0% 0%",
         end: "100% 0%",
-        scrub: 0
+        scrub: 1.5
       }
     });
     const layers = [
@@ -39,174 +39,21 @@ gsap.ticker.lagSmoothing(0);
 
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
-  const aboutTitle = document.querySelector(".parallax__title_about");
+  const elements = document.querySelectorAll(
+    ".parallax__title_about, .column-visimisi, .column, .container-vip, .pricing, .card-promo, .card-promo2, .card-promo3, .container-unggulan"
+  );
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          aboutTitle.classList.add("visible");
-        } else {
-          aboutTitle.classList.remove("visible"); // Biar muncul lagi pas scroll
-        }
+        entry.target.classList.toggle("visible", entry.isIntersecting);
       });
     },
-    { threshold: 0.2 } // Muncul saat 20% elemen terlihat
+    { threshold: 0.2 }
   );
 
-  observer.observe(aboutTitle);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const column_visimisi = document.querySelector(".column-visimisi");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          column_visimisi.classList.add("visible"); 
-        } else {
-          column_visimisi.classList.remove("visible");
-        }
-      });
-    },
-    { threshold: 0.2 } 
-  );
-
-  observer.observe(column_visimisi);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const column = document.querySelector(".column");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          column.classList.add("visible"); 
-        } else {
-          column.classList.remove("visible");
-        }
-      });
-    },
-    { threshold: 0.2 } 
-  );
-
-  observer.observe(column);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const vip = document.querySelector(".container-vip");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          vip.classList.add("visible"); 
-        } else {
-          vip.classList.remove("visible");
-        }
-      });
-    },
-    { threshold: 0.2 } 
-  );
-
-  observer.observe(vip);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const pricing = document.querySelector(".pricing");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          pricing.classList.add("visible"); 
-        } else {
-          pricing.classList.remove("visible");
-        }
-      });
-    },
-    { threshold: 0.2 } 
-  );
-
-  observer.observe(pricing);
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  const card_promo = document.querySelector(".card-promo");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          card_promo.classList.add("visible"); 
-        } else {
-          card_promo.classList.remove("visible");
-        }
-      });
-    },
-    { threshold: 0.2 } 
-  );
-
-  observer.observe(card_promo);
-});
-document.addEventListener("DOMContentLoaded", function () {
-  const card_promo2 = document.querySelector(".card-promo2");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          card_promo2.classList.add("visible"); 
-        } else {
-          card_promo2.classList.remove("visible");
-        }
-      });
-    },
-    { threshold: 0.2 } 
-  );
-
-  observer.observe(card_promo2);
-});
-document.addEventListener("DOMContentLoaded", function () {
-  const card_promo3 = document.querySelector(".card-promo3");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          card_promo3.classList.add("visible"); 
-        } else {
-          card_promo3.classList.remove("visible");
-        }
-      });
-    },
-    { threshold: 0.2 } 
-  );
-
-  observer.observe(card_promo3);
-});
-document.addEventListener("DOMContentLoaded", function () {
-  const container_unggulan = document.querySelector(".container-unggulan");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          container_unggulan.classList.add("visible"); 
-        } else {
-          container_unggulan.classList.remove("visible");
-        }
-      });
-    },
-    { threshold: 0.2 } 
-  );
-
-  observer.observe(container_unggulan);
+  elements.forEach((el) => observer.observe(el));
 });
 
 
