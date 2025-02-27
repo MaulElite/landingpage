@@ -259,7 +259,7 @@ body {
 
 .parallax__content {
     margin: 120px 0 0 0;
-    padding: 0  100px ;
+    padding: 50px 100px;
     justify-content: center;
     align-items: center;
     height: auto;
@@ -281,15 +281,16 @@ body {
 
 
 
-._about h1 {
+.parallax__title_about h1 {
     font-size: 5vh;
     margin: 25px 0 0 65px;
 }
 
 
 .parallax__title_about p {
-    margin:30px 0 0 70px;
-    font-size: 21px;
+    margin: 30px 0 0 70px;
+    font-size: 22px;
+    color: rgb(228, 228, 228);
 
 }
 
@@ -308,8 +309,9 @@ body {
 }
 
 .column-visimisi p {
-    font-size: 20px;
-    margin: 0 0 0 157px;
+    font-size: 22px;
+    margin: 0 0 0 218px;
+    color: rgb(228, 228, 228);
 }
 
 .column {
@@ -321,15 +323,18 @@ body {
     font-size: 40px;
     margin: 0 0 0 48px;
 }
+
 .column span {
     display: flex;
     flex-direction: row;
-    margin: 0 0 0 140px;
+    margin: 0 0 0 200px;
+    padding: 0 50px 0 0;
 }
 
 .column li {
-    font-size: 17px;
+    font-size: 20px;
     margin: 0 10px 0 10px;
+    color: rgb(228, 228, 228);
 }
 
 
@@ -416,13 +421,13 @@ body {
     transform: translateX(0);
 }
 
-.column-visimisi  {
+.column-visimisi {
     opacity: 0;
     transform: translateX(-100px);
     transition: opacity 0.3s ease-out, transform 3s ease-out;
 }
 
-.column-visimisi .visible{
+.column-visimisi .visible {
     opacity: 1;
     transform: translateX(0);
 }
@@ -433,7 +438,7 @@ body {
     transition: opacity 0.3s ease-out, transform 3s ease-out;
 }
 
-.column.visible{
+.column.visible {
     opacity: 1;
     transform: translateX(0);
 }
@@ -726,9 +731,152 @@ body {
 
 
 
+/* sss */
+.container-cpt-utama {
+    color: #fff;
+    height: 90vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.cpt-container {
+    border-radius: 20px;
+    padding: 40px;
+    width: 1100px;
+}
+
+.cpt-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cpt-title {
+    font-size: 80px;
+    background: linear-gradient(45deg, #00b4d8, #90e0ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+.cpt-subtitle {
+    font-size: 50px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.cpt-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.cpt-benefit-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.cpt-benefit-box:hover {
+    transform: translateY(-5px);
+}
+
+.cpt-benefit-title {
+    font-size: 30px;
+    color: #90e0ef;
+    margin-bottom: 15px;
+}
+
+.cpt-benefit-list {
+    list-style: none;
+}
+
+.cpt-benefit-item {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+}
+
+.cpt-stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.cpt-stat-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.cpt-stat-number {
+    font-size: 50px;
+    font-weight: bold;
+    color: #90e0ef;
+    margin-bottom: 5px;
+}
+
+.cpt-cta-button {
+    display: inline-block;
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(45deg, #00b4d8, #90e0ef);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.cpt-cta-button:hover {
+    transform: scale(1.05);
+}
 
 
+.cpt-subtitle {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.3s ease-out, transform 0.8s ease-out;
+}
 
+
+.cpt-subtitle.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cpt-stat-number {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.3s ease-out, transform 0.8s ease-out;
+}
+
+
+.cpt-stat-number.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cpt-stat-label {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.3s ease-out, transform 0.8s ease-out;
+}
+
+
+.cpt-stat-label.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
@@ -774,6 +922,7 @@ body {
     background: linear-gradient(0deg, rgba(255, 246, 246, 0) 0%, rgba(34, 193, 195, 1) 88%);
 
 }
+
 .card-promo2 {
     width: 300px;
     height: 430px;
@@ -795,6 +944,7 @@ body {
     background: linear-gradient(0deg, rgba(255, 246, 246, 0) 0%, rgba(34, 193, 195, 1) 88%);
 
 }
+
 .card-promo3 {
     width: 300px;
     height: 430px;
@@ -874,9 +1024,11 @@ body {
 .card-promo:hover .stats {
     background: #0056b3;
 }
+
 .card-promo2:hover .stats {
     background: #0056b3;
 }
+
 .card-promo3:hover .stats {
     background: #0056b3;
 }
@@ -952,27 +1104,29 @@ body {
     transition: opacity 0.3s ease-out, transform 1s ease-out;
 }
 
-.card-promo.visible{
+.card-promo.visible {
     opacity: 1;
     transform: translateY(0);
 }
+
 .card-promo2 {
     opacity: 0;
     transform: translateY(100px);
     transition: opacity 0.3s ease-out, transform 2s ease-out;
 }
 
-.card-promo2.visible{
+.card-promo2.visible {
     opacity: 1;
     transform: translateY(0);
 }
+
 .card-promo3 {
     opacity: 0;
     transform: translateY(100px);
     transition: opacity 0.3s ease-out, transform 3s ease-out;
 }
 
-.card-promo3.visible{
+.card-promo3.visible {
     opacity: 1;
     transform: translateY(0);
 }
@@ -1026,7 +1180,6 @@ body {
 
 
 .button-unggulan {
-
     padding: 15px;
     border: 2px solid transparent;
     text-decoration: none;
@@ -1051,7 +1204,7 @@ body {
     transition: opacity 0.3s ease-out, transform 3s ease-out;
 }
 
-.container-unggulan.visible{
+.container-unggulan.visible {
     opacity: 1;
     transform: translateY(0);
 }
@@ -1627,21 +1780,20 @@ canvas {
 @media (max-width: 1300px) {
 
     .parallax__content {
-        padding: 200px 150px;
+        padding: 200px 100px;
         text-align: center;
     }
 
     .parallax__title_about {
-        padding: 20px 0 ;
+        padding: 20px 0;
         flex-direction: column;
     }
 
     .parallax__title_about h1 {
-        font-size: 10vh;
+        font-size: 9vh;
         text-decoration: none;
         margin: 0 0 0 0;
-        
-
+        text-align: center;
     }
 
     .parallax__title_about p {
@@ -1656,7 +1808,7 @@ canvas {
     }
 
     .column-visimisi {
-        padding:50px 100px;
+        padding: 50px 100px;
         margin: 0 0 0 0;
         flex-direction: column;
     }
@@ -1669,13 +1821,13 @@ canvas {
     .column-visimisi p {
         font-size: 19px;
         margin: 10px 0 0 0;
-        
+
     }
 
 
     .column {
         flex-direction: column;
-        margin:0 0 0 0;
+        margin: 0 0 0 0;
         padding: 50px 0 0 0;
     }
 
@@ -1688,9 +1840,9 @@ canvas {
 
     .column span {
         flex-direction: column;
-        margin:0 0 0 0;
+        margin: 0 0 0 0;
         padding: 10px 100px;
-        
+
     }
 
     .column li {
@@ -1730,8 +1882,57 @@ canvas {
         margin-top: 30px;
     }
 
-    .card{
-        margin:0 -5px;
+    .card {
+        margin: 0 -5px;
+    }
+
+    .container-cpt-utama {
+        height: auto;
+    }
+
+    .cpt-container {
+        width: 700px;
+    }
+
+    .cpt-title {
+        font-size: 50px;
+    }
+
+    .cpt-subtitle {
+        font-size: 30px;
+    }
+
+
+    .cpt-benefit-title {
+        font-size: 15px;
+    }
+
+    .cpt-benefit-item {
+        font-size: 15px;
+    }
+
+    .cpt-stats-container {
+        margin: 0 0;
+    }
+
+    .cpt-stat-card {
+        padding: 0 0 20px 0;
+    }
+
+    .cpt-stat-number {
+        font-size: 30px;
+        margin: 0 10px 0 0;
+    }
+
+    .cpt-stat-label {
+        font-size: 20px;
+        margin: 0 10px 0 0;
+    }
+
+    .cpt-cta-button {
+
+        width: 30%;
+        font-size: 15px;
     }
 
 }
@@ -1741,8 +1942,9 @@ canvas {
 
     .parallax__title,
     .parallax__title_2 {
-        font-size: 35px;
+        font-size: 100px;
     }
+
     .parallax__content {
         padding: 30px 20px;
     }
@@ -1753,14 +1955,9 @@ canvas {
         margin: 0 0 0 0;
     }
 
-
-
     .parallax__title_about h1 {
-        font-size: 8vh;
-        margin: 0 0 0 0;
+        font-size: vh;
     }
-
-
 
     .parallax__title_about p {
         margin: 0 0 0 0;
@@ -1768,9 +1965,7 @@ canvas {
         padding: 0 10px;
     }
 
-
     .visimisi {
-
         margin: 0 0 0 0;
         padding: 0 0;
     }
@@ -1818,9 +2013,28 @@ canvas {
         text-align: start;
         font-size: 14px;
         margin: 10px 0 10px 0;
-        
+
     }
 
+
+    .container-cpt-utama {
+        width: auto;
+        margin: 80px 0;
+    }
+
+    .cpt-container {
+        padding: 10px 0 20px 0;
+        margin: 0 0 0 0;
+    }
+
+    .cpt-content-wrapper {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .cpt-stat-card {
+        padding: 20px 0 20px 0;
+    }
 
 
     .slide-content {
@@ -1876,6 +2090,10 @@ canvas {
     .title-master {
         font-size: 33px;
     }
+    
+    .card-unggulan {
+        padding: 85px 0 0 0;
+    }
 
     .container-img-unggulan {
         width: 650px;
@@ -1891,6 +2109,10 @@ canvas {
 
     .card-unggulan .pop-up-image img {
         width: 95%;
+    }
+
+    .button-unggulan {
+        width: 400px;
     }
 
 }
@@ -1921,7 +2143,7 @@ canvas {
     }
 
     .parallax__title_about h1 {
-        font-size: 4vh;
+        font-size: 5vh;
         text-decoration: none;
         margin: 0 0 0 0;
     }
@@ -1976,7 +2198,7 @@ canvas {
         padding: 0 0;
         font-size: 11px;
         line-height: 15px;
-        margin: 10px -80px 10px -100px;
+        margin: 10px -80px 10px -120px;
     }
 
 
@@ -2016,17 +2238,46 @@ canvas {
         text-align: center;
     }
 
-    .card-promo {
-        width: 300px;
-        margin-bottom: 30px;
+
+    .container-cpt-utama {
+        width: auto;
+        padding: 40px 20px;
     }
-    .card-promo2 {
-        width: 300px;
-        margin-bottom: 30px;
+
+    .cpt-container {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
     }
-    .card-promo3 {
-        width: 300px;
-        margin-bottom: 30px;
+
+    .cpt-title {
+        font-size: 35px;
+    }
+
+    .cpt-subtitle {
+        font-size: 15px;
+    }
+
+    .cpt-benefit-title {
+        font-size: 10px;
+    }
+
+    .cpt-benefit-item {
+        font-size: 8px;
+        margin: 0 0 0 0;
+    }
+
+    .cpt-stat-number {
+        font-size: 15px;
+        padding: 15px 0 0 0;
+    }
+
+    .cpt-stat-label {
+        font-size: 15px;
+    }
+
+    .cpt-cta-button {
+        width: 150px;
+        font-size: 10px;
     }
 
 
@@ -2088,11 +2339,13 @@ canvas {
 
     .container-unggulan {
         width: 100%;
+        height: 700px;
     }
 
     .card-unggulan {
         width: 90%;
-        height: 630px;
+        height: 505px;
+        margin: 0 0 0 0;
     }
 
     .card-unggulan img {

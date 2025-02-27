@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger: triggerElement,
         start: "0% 0%",
         end: "100% 0%",
-        scrub: 1.5
+        scrub: 0
       }
     });
     const layers = [
@@ -41,7 +41,7 @@ gsap.ticker.lagSmoothing(0);
 
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(
-    ".parallax__title_about, .column-visimisi, .column, .container-vip, .pricing, .card-promo, .card-promo2, .card-promo3, .container-unggulan"
+    ".parallax__title_about, .column-visimisi, .column, .container-vip, .pricing, .cpt-subtitle, .cpt-stat-number, .cpt-stat-label ,.container-unggulan"
   );
 
   const observer = new IntersectionObserver(
