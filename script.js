@@ -1,7 +1,7 @@
 // ------- Osmo [https://osmo.supply/] ------- //
 
 document.addEventListener("DOMContentLoaded", () => {
-	// Register GSAP Plugins
+  // Register GSAP Plugins
   gsap.registerPlugin(ScrollTrigger);
   // Parallax Layers
   document.querySelectorAll('[data-parallax-layers]').forEach((triggerElement) => {
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 /* Lenis */
 const lenis = new Lenis();
 lenis.on('scroll', ScrollTrigger.update);
-gsap.ticker.add((time) => {lenis.raf(time * 1000);});
+gsap.ticker.add((time) => { lenis.raf(time * 1000); });
 gsap.ticker.lagSmoothing(0);
 
 
@@ -60,30 +60,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Profile js
 const images = document.querySelectorAll('.carousel-track-visimisi img');
-        const modal = document.getElementById('modal');
-        const modalImg = document.getElementById('modalImg');
-        let currentIndex = 0;
+const modal = document.getElementById('modal');
+const modalImg = document.getElementById('modalImg');
+let currentIndex = 0;
+const body = document.body;
+let scrollPosition = 0;
 
-        images.forEach((img, index) => {
-            img.addEventListener('click', () => openModal(index));
-        });
+images.forEach((img, index) => {
+  img.addEventListener('click', () => openModal(index));
+});
 
-        function openModal(index) {
-            modal.style.display = 'flex';
-            modalImg.src = images[index].src;
-            currentIndex = index;
-        }
-        function closeModal() {
-            modal.style.display = 'none';
-        }
-        function prevImage() {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            modalImg.src = images[currentIndex].src;
-        }
-        function nextImage() {
-            currentIndex = (currentIndex + 1) % images.length;
-            modalImg.src = images[currentIndex].src;
-        }
+function openModal(index) {
+  scrollPosition = window.scrollY;
+  modal.style.display = 'flex';
+  modalImg.src = images[index].src;
+  currentIndex = index;
+  body.style.position = "fixed";
+  body.style.top = `-${scrollPosition}px`;
+  body.style.left = "0";
+  body.style.width = "100%";
+  body.style.overflow = "hidden";
+}
+function closeModal() {
+  modal.style.display = 'none';
+
+  body.style.position = "";
+  body.style.top = "";
+  body.style.overflow = "";
+  window.scrollTo(0, scrollPosition);
+}
+function prevImage() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  modalImg.src = images[currentIndex].src;
+}
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length;
+  modalImg.src = images[currentIndex].src;
+}
 
 // kontak js
 Vue.config.devtools = true;
@@ -114,7 +127,8 @@ Vue.component('card', {
     height: 0,
     mouseX: 0,
     mouseY: 0,
-    mouseLeaveDelay: null }),
+    mouseLeaveDelay: null
+  }),
 
   computed: {
     mousePX() {
@@ -127,7 +141,8 @@ Vue.component('card', {
       const rX = this.mousePX * 30;
       const rY = this.mousePY * -30;
       return {
-        transform: `rotateY(${rX}deg) rotateX(${rY}deg)` };
+        transform: `rotateY(${rX}deg) rotateX(${rY}deg)`
+      };
 
     },
     cardBgTransform() {
@@ -137,9 +152,11 @@ Vue.component('card', {
     },
     cardBgImage() {
       return {
-        backgroundImage: `url(${this.dataImage})` };
+        backgroundImage: `url(${this.dataImage})`
+      };
 
-    } },
+    }
+  },
 
   methods: {
     handleMouseMove(e) {
@@ -154,65 +171,67 @@ Vue.component('card', {
         this.mouseX = 0;
         this.mouseY = 0;
       }, 1000);
-    } } });
+    }
+  }
+});
 
 
 
 const app = new Vue({
-  el: '#app' });
+  el: '#app'
+});
 
 
 
-  var TxtRotate = function(el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 100) || 1000;
-    this.txt = '';
-    this.tick();
+var TxtRotate = function (el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 100) || 1000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function () {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+  var that = this;
+  var delta = 200 - Math.random() * 150;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
     this.isDeleting = false;
-  };
-  
-  TxtRotate.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-  
-    if (this.isDeleting) {
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function () {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function () {
+  var elements = document.getElementsByClassName('parallax__title', 'parallax__title_2');
+  for (var i = 0; i < elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
     }
-  
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-  
-    var that = this;
-    var delta = 200 - Math.random() * 150;
-  
-    if (this.isDeleting) { delta /= 2; }
-  
-    if (!this.isDeleting && this.txt === fullTxt) {
-      delta = this.period;
-      this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-      this.isDeleting = false;
-      this.loopNum++;
-      delta = 500;
-    }
-  
-    setTimeout(function() {
-      that.tick();
-    }, delta);
-  };
-  
-  window.onload = function() {
-    var elements = document.getElementsByClassName('parallax__title','parallax__title_2');
-    for (var i=0; i<elements.length; i++) {
-      var toRotate = elements[i].getAttribute('data-rotate');
-      var period = elements[i].getAttribute('data-period');
-      if (toRotate) {
-        new TxtRotate(elements[i], JSON.parse(toRotate), period);
-      }
-    }
-  
-  };
-  
+  }
+
+};
