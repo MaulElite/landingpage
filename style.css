@@ -2260,11 +2260,11 @@ canvas {
     }
 
     .cpt-benefit-title {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .cpt-benefit-item {
-        font-size: 12px;
+        font-size: 11px;
         margin: 0 0 0 0;
     }
 
@@ -2279,7 +2279,7 @@ canvas {
 
     .cpt-cta-button {
         width: 150px;
-        font-size: 10px;
+        font-size: 13px;
     }
 
 
