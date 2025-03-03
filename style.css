@@ -735,7 +735,7 @@ body {
 /* sss */
 .container-cpt-utama {
     color: #fff;
-    height: 90vh;
+    height: auto;
     width: auto;
     display: flex;
     justify-content: center;
