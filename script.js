@@ -59,7 +59,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Profile js
+const images = document.querySelectorAll('.carousel-track-visimisi img');
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modalImg');
+        let currentIndex = 0;
 
+        images.forEach((img, index) => {
+            img.addEventListener('click', () => openModal(index));
+        });
+
+        function openModal(index) {
+            modal.style.display = 'flex';
+            modalImg.src = images[index].src;
+            currentIndex = index;
+        }
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            modalImg.src = images[currentIndex].src;
+        }
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            modalImg.src = images[currentIndex].src;
+        }
 
 // kontak js
 Vue.config.devtools = true;
