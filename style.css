@@ -491,7 +491,7 @@ body {
 
 @keyframes scroll {
     from {
-        transform: translateX(30%);
+        transform: translateX(37%);
     }
 
     to {
@@ -671,7 +671,7 @@ body {
     margin-right: 7vh;
     margin-top: 10px;
     background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
+    padding: 40px 20px;
     border-radius: 15px;
     display: inline-block;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -679,6 +679,7 @@ body {
 
 .pricing p {
     color: #eaeaea;
+    padding:0 0 10px 0;
 }
 
 .pricing h2 {
@@ -2259,11 +2260,11 @@ canvas {
     }
 
     .cpt-benefit-title {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .cpt-benefit-item {
-        font-size: 8px;
+        font-size: 12px;
         margin: 0 0 0 0;
     }
 
