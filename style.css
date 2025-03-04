@@ -482,8 +482,8 @@ body {
     }
 }
 .carousel-track-visimisi img {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
     object-fit: cover;
     margin: 0 10px;
     cursor: pointer;
@@ -505,6 +505,7 @@ body {
     background: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
+    z-index: 60;
 }
 .modal img {
     max-width: 90%;
@@ -2343,7 +2344,7 @@ canvas {
     }
 
     .carousel-track-visimisi {
-        animation: scroll 25s linear infinite;
+        animation: scrollCarousel 40s linear infinite;
         padding: 20px 0;
     }
 
@@ -2383,16 +2384,6 @@ canvas {
 
     .site-footer {
         padding-bottom: 20px;
-    }
-
-    @keyframes scroll {
-        from {
-            transform: translateX(17%);
-        }
-
-        to {
-            transform: translateX(-100%);
-        }
     }
 
 }
