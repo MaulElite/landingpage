@@ -791,7 +791,7 @@ body {
 
 .cpt-subtitle {
     font-size: 50px;
-    color: #ffffff;
+    color: rgb(228, 228, 228);
     margin-top: 10px;
 }
 
@@ -817,6 +817,17 @@ body {
     font-size: 30px;
     color: #90e0ef;
     margin-bottom: 15px;
+    
+}
+.cpt-master{
+    background: linear-gradient(90deg, #ff0000, #d308b1, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.cpt-follower{
+    background: linear-gradient(90deg, #aaff00, #4cd137,  #aaff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
 }
 
 .cpt-benefit-list {
@@ -827,6 +838,7 @@ body {
     padding: 10px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 20px;
+    color: rgb(226, 226, 226);
 }
 
 .cpt-stats-container {
