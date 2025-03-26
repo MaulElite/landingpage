@@ -41,13 +41,16 @@ gsap.ticker.lagSmoothing(0);
 
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(
-    ".parallax__title_about, .column-visimisi, .column, .container-vip, .pricing, .cpt-subtitle, .cpt-stat-number, .cpt-stat-label ,.container-unggulan"
+    ".parallax__title_about, .column-visimisi, .column, .container-vip, .pricing, .cpt-subtitle, .cpt-stat-number, .cpt-stat-label, .container-unggulan"
   );
 
   const observer = new IntersectionObserver(
-    (entries) => {
+    (entries, observer) => {
       entries.forEach((entry) => {
-        entry.target.classList.toggle("visible", entry.isIntersecting);
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // Menghentikan observer setelah elemen muncul sekali
+        }
       });
     },
     { threshold: 0.2 }
