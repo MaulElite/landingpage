@@ -186,55 +186,90 @@ const app = new Vue({
 
 
 
-var TxtRotate = function (el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 100) || 1000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
 
-TxtRotate.prototype.tick = function () {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
-
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-  var that = this;
-  var delta = 200 - Math.random() * 150;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
+  // Constructor
+  var TxtRotate = function (el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
     this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
+    this.tick();
+  };
+
+  // Logic ketik dan hapus
+  TxtRotate.prototype.tick = function () {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+    var that = this;
+    var delta = 150 - Math.random() * 30;
+
+    if (this.isDeleting) delta /= 2;
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 400;
+    }
+
+    setTimeout(function () {
+      that.tick();
+    }, delta);
+  };
+
+  // Jalankan saat halaman selesai dimuat
+  window.onload = function () {
+    // Gabungkan semua class target
+    var elements = document.querySelectorAll('.parallax__title, .parallax__title_2, .txt-awal');
+    for (var i = 0; i < elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-rotate');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+  };
+
+
+
+  function openPopup(event) {
+    scrollPosition = window.scrollY;
+    body.style.position = "fixed";
+    body.style.top = `-${scrollPosition}px`;
+    body.style.left = "0";
+    body.style.width = "100%";
+    body.style.overflow = "hidden";
+    event.preventDefault();
+    document.getElementById('popupBox').style.display = 'block';
   }
 
-  setTimeout(function () {
-    that.tick();
-  }, delta);
-};
+  function closePopup() {
+    body.style.position = "";
+  body.style.top = "";
+  body.style.overflow = "";
+  window.scrollTo(0, scrollPosition);
+    document.getElementById('popupBox').style.display = 'none';
+  }
 
-window.onload = function () {
-  var elements = document.getElementsByClassName('parallax__title', 'parallax__title_2');
-  for (var i = 0; i < elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+  window.onclick = function(event) {
+    var popup = document.getElementById('popupBox');
+    if (event.target === popup) {
+      popup.style.display = "none";
     }
   }
 
-};
+
+
