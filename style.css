@@ -2480,7 +2480,7 @@ canvas {
 
 
     .title-master {
-        font-size: 33px;
+        font-size: 24px;
     }
 
     .image-card-vip {
@@ -2546,6 +2546,14 @@ canvas {
     .card-unggulan img {
         width: 300px;
         height: 450px;
+    }
+
+    .title-testimonial{
+        font-size: 24px;
+    }
+
+    .title-testimonial span{
+        font-size: 24px;
     }
 
     .site-footer {
