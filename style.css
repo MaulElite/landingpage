@@ -2324,12 +2324,16 @@ canvas {
     }
 
     .benefits {
-        margin-left: -5vh;
+        margin-left: -7vh;
     }
 
     .benefits ul li {
-        font-size: 14px;
-        margin: 15px 0;
+        font-size: 15px;
+        margin: 15px 0 ;
+    }
+
+    .benefits ul li::before{
+        margin: -3px 0 0 0;
     }
 
     .cta-button-vip {
