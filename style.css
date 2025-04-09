@@ -1,19 +1,12 @@
 body {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('img/bgdr.png');
-    /* Ganti dengan path gambar */
+    background-image: url('img/bgdr.png'); 
     background-size: cover;
-    /* Agar gambar menutupi seluruh layar */
     background-position: center;
-    /* Pusatkan gambar */
     background-repeat: no-repeat;
-    /* Hindari pengulangan gambar */
     background-attachment: fixed;
-    /* Biarkan gambar tetap saat di-scroll */
     image-rendering: optimizeSpeed;
-    height: 100vh;
 }
 
 
@@ -258,6 +251,7 @@ body {
 }
 
 .parallax__content {
+    font-family: 'Poppins', sans-serif;
     margin: 120px 0 0 0;
     padding: 50px 100px;
     justify-content: center;
@@ -266,7 +260,7 @@ body {
     display: flex;
     position: relative;
     color: #eaeaea;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 164, 204) 90%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 164, 204) 70%);
 }
 
 .blur-card {
@@ -394,6 +388,12 @@ body {
 .klik-hir {
     color: #00aced;
     text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+.klik-hir:hover {
+    color: #ffffffff;
+    animation: shimmer 1s forwards;
 }
 
 .popup-profile {
@@ -405,6 +405,10 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto; /* biar bisa discroll kalau tinggi */
+    padding: 40px 20px; /* biar ada jarak dari atas/bawah */
 }
 
 .popup-content-profile {
@@ -440,18 +444,18 @@ body {
     }
 }
 
-
 .blur-card-popup {
     position: relative;
-    top: auto;
+    top: 0;
     width: 1300px;
     padding: 40px 0 60px 0;
     border-radius: 15px;
     box-shadow: 0 2px 5px rgb(255, 255, 255);
     overflow: hidden;
-    margin-top: 130px;
-    margin-left: 550px;
+
+    margin: auto; /* ini yang bikin tetap di tengah */
 }
+
 
 .parallax__title_about {
     display: flex;
@@ -664,6 +668,7 @@ body {
 
 
 .container-vip {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -705,9 +710,9 @@ body {
 }
 
 .header-vip h1 {
-    font-family: 'Montserrat', sans-serif;
+    
+    font-family: PP Neue Corp Wide, sans-serif;
     font-size: 48px;
-    font-weight: bold;
     margin-bottom: 20px;
     background: linear-gradient(90deg, #ff9f43, #ffd000, #b4852f);
 }
@@ -737,12 +742,14 @@ body {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 20px;
+    margin-left: 30px;
     color: aquamarine;
 }
 
 .benefits ul {
     list-style-type: none;
     padding: 0;
+    margin-left: 40px;
 }
 
 .benefits ul li {
@@ -813,6 +820,7 @@ body {
 }
 
 .pricing h2 {
+    
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -825,6 +833,7 @@ body {
 }
 
 .pricing .original-price {
+    
     font-size: 24px;
     color: #f0f0f0;
     text-decoration: line-through;
@@ -852,7 +861,7 @@ body {
     cursor: pointer;
     font-weight: 600;
     color: #ffffff;
-    
+
     background: linear-gradient(90deg, #ff9f43, #ffd000, #b4852f);
     overflow: hidden;
     transition: all 0.3s ease-in-out;
@@ -912,6 +921,7 @@ body {
 
 /* sss */
 .container-cpt-utama {
+    font-family: 'Poppins', sans-serif;
     color: #fff;
     height: auto;
     width: auto;
@@ -932,10 +942,11 @@ body {
 
 .cpt-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .cpt-title {
+    font-family: PP Neue Corp Wide, sans-serif;
     font-size: 80px;
     background: linear-gradient(45deg, #00b4d8, #90e0ef);
     -webkit-background-clip: text;
@@ -1099,7 +1110,7 @@ body {
     width: 100%;
     height: 60em;
     justify-content: center;
-    padding: 70px 0 0 0;
+    padding: 60px 0 0 0;
 }
 
 .card-unggulan {
@@ -1107,7 +1118,7 @@ body {
     height: auto;
     padding: 55px 0 60px 0;
     background: rgba(255, 255, 255, 0.1);
-    
+
     backdrop-filter: blur(20px);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -1130,7 +1141,7 @@ body {
     border-radius: 15px;
     font-size: 15px;
     transition: all 0.3s ease;
-    background: linear-gradient(90deg, #ff9f43, #ffd000, #b4852f);
+    background-color: #1ba3c5;
     border: #00000000;
     cursor: pointer;
     font-weight: 600;
@@ -1163,20 +1174,19 @@ body {
 
 
 
-
 /* kontak css */
 .container-kontak1 {
-    padding: 200px 100px 0 100px;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 0 0 0;
     z-index: -1;
 }
 
 .card-border-kontak {
     height: auto;
-    width: auto;
+    width: 100%;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgb(255, 255, 255);
-    overflow: hidden;
-    padding: 40px 0 0 0;
+    overflow: hidden; 
+
 }
 
 .title-master {
@@ -1197,7 +1207,7 @@ p+p {
 }
 
 .container-kontak {
-    padding: 20px 0;
+    padding: 0 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1253,7 +1263,7 @@ p+p {
     box-shadow: none;
     background: transparent;
     transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    margin: 0 70px;
+    margin: 0 60px;
 }
 
 .card-bg {
@@ -1314,27 +1324,26 @@ p+p {
 }
 
 .button-kontak {
-    padding: 15px;
+    padding: 20px;
     border: 2px solid transparent;
     text-decoration: none;
-    border-radius: 15px;
-    font-size: 15px;
+    border-radius: 10px;
+    font-size: 16px;
     transition: all 0.6s ease;
-    background: linear-gradient(90deg, #ff9f43, #ffd000, #b4852f);
+    background-color: #1ba3c5;
     border: #00000000;
     cursor: pointer;
     color: #ffffff;
-    font-weight: 600;
 
 }
 
 .button-kontak:hover {
-    padding: 20px;
+    padding: 25px;
     color: rgb(255, 255, 255);
 }
 
 .button-kontak a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: all 0.6s ease;
 }
@@ -1377,6 +1386,7 @@ canvas {
 /* Testimonial  */
 
 .container-testimonial-body {
+    font-family: 'Poppins', sans-serif;
     padding: 32px;
 }
 
@@ -1389,11 +1399,14 @@ canvas {
 
 .title-testimonial {
     font-family: PP Neue Corp Wide, sans-serif;
-    font-size: 35px;
+    font-size: 45px;
     font: bold;
     color: #ffffff;
-    margin-bottom: 40px;
 
+}
+
+.title-testimonial span {
+    color: #24d2fd;
 }
 
 .testimonial {
@@ -1819,10 +1832,8 @@ canvas {
     .pricing {
         margin-left: 5vh;
     }
+ 
 
-    .button-kontak {
-        margin-right: 15px;
-    }
 
     .container-img-unggulan {
         width: 57vh;
@@ -1845,9 +1856,6 @@ canvas {
         margin-top: 30px;
     }
 
-    .card {
-        margin: 0 -5px;
-    }
 
     .container-cpt-utama {
         height: auto;
@@ -1897,6 +1905,14 @@ canvas {
         width: 30%;
         font-size: 15px;
     }
+
+    .button-kontak {
+        margin-right: 15px;
+    }
+    .card {
+        margin: 0 -5px;
+    }
+
 
 }
 
@@ -2299,11 +2315,8 @@ canvas {
     }
 
     .header-vip h1 {
-        font-family: 'Montserrat', sans-serif;
         font-size: 30px;
-        font-weight: bold;
-        margin: 0;
-        background: linear-gradient(90deg, #ff9f43, #ffd000, #b4852f);
+
     }
 
     .header-vip p {
@@ -2339,8 +2352,7 @@ canvas {
 
 
     .image-card-vip img {
-        width: 100px;
-        height: 200px;
+ 
         padding: 0;
         margin: 0;
     }
@@ -2438,10 +2450,30 @@ canvas {
         font-size: 13px;
     }
 
+    .container-kontak1 {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        
+    }
+
+    .card-border-kontak{
+        padding: 0 0 0 0;
+        
+    }
+
+    .title-master {
+        padding: 0 50px;
+    }
 
     .container-kontak {
-        margin-left: -7px;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
     }
+
+    .card {
+        margin:0 200px;
+    }
+
 
 
     .title-master {
