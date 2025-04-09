@@ -696,7 +696,7 @@ body {
 .container-vip {
     opacity: 0;
     transform: translateY(100px);
-    transition: opacity 0.6s ease-out, transform 4s ease-out;
+    transition: opacity 0.3s ease-out, transform 0.6s ease-out;
 }
 
 
@@ -2218,7 +2218,7 @@ canvas {
     .blur-card-popup {
         width: 305px;
         height: auto;
-        margin: 0 0 0 50px;
+        margin: 0 0 0 40px;
         padding: 30px 20px 20px 20px;
     }
 
