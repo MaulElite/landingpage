@@ -2327,6 +2327,10 @@ canvas {
         margin-left: -7vh;
     }
 
+    .benefits h2{
+        font-size: 20px;
+    }
+
     .benefits ul li {
         font-size: 15px;
         margin: 15px 0 ;
