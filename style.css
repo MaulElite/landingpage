@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('img/bgdr.png'); 
+    background-image: url('img/bgdr.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -388,7 +388,7 @@ body {
 
 
 .klik-hir {
-    color: #00aced;
+    color: #31c8ff;
     text-decoration: underline;
     transition: all 0.3s ease-in-out;
 }
@@ -399,7 +399,8 @@ body {
 }
 
 .popup-profile {
-    display: none; /* SEMUA ukuran layar awalnya sembunyi */
+    display: none;
+    /* SEMUA ukuran layar awalnya sembunyi */
     position: fixed;
     inset: 0;
     z-index: 999;
@@ -453,7 +454,8 @@ body {
     box-shadow: 0 2px 5px rgb(255, 255, 255);
     overflow: hidden;
 
-    margin: auto; /* ini yang bikin tetap di tengah */
+    margin: auto;
+    /* ini yang bikin tetap di tengah */
 }
 
 
@@ -710,7 +712,7 @@ body {
 }
 
 .header-vip h1 {
-    
+
     font-family: PP Neue Corp Wide, sans-serif;
     font-size: 48px;
     margin-bottom: 20px;
@@ -820,7 +822,7 @@ body {
 }
 
 .pricing h2 {
-    
+
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -833,7 +835,7 @@ body {
 }
 
 .pricing .original-price {
-    
+
     font-size: 24px;
     color: #f0f0f0;
     text-decoration: line-through;
@@ -919,6 +921,93 @@ body {
 
 
 
+
+
+
+
+
+.container-panduan {
+    font-family: 'Poppins', sans-serif;
+    padding: 100px 400px;
+    color: #fff;
+}
+
+.container-panduan h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container-panduan h1 {
+    font-family: PP Neue Corp Wide, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.container-panduan .highlight {
+    color: #31c8ff;
+}
+
+.grid-panduan {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+}
+
+.card-panduan {
+    background-color: #ececec34;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.card-panduan:hover {
+    transform: translateY(-5px);
+}
+
+.card-panduan img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-bottom: 1px solid #333;
+}
+
+.card-panduan p {
+    font-size: 20px;
+    padding: 8px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* sss */
 .container-cpt-utama {
     font-family: 'Poppins', sans-serif;
@@ -948,7 +1037,7 @@ body {
 .cpt-title {
     font-family: PP Neue Corp Wide, sans-serif;
     font-size: 80px;
-    background: linear-gradient(45deg, #00b4d8, #90e0ef);
+    background: linear-gradient(45deg,  #31c8ff , #90e0ef);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 15px;
@@ -980,7 +1069,9 @@ body {
 
 .cpt-benefit-title {
     font-size: 30px;
-    color: #90e0ef;
+    background: linear-gradient(45deg,  #31c8ff , #90e0ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 15px;
 
 }
@@ -1022,7 +1113,9 @@ body {
 .cpt-stat-number {
     font-size: 50px;
     font-weight: bold;
-    color: #90e0ef;
+    background: linear-gradient(45deg,  #31c8ff , #90e0ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 5px;
 }
 
@@ -1030,7 +1123,8 @@ body {
     display: inline-block;
     width: 100%;
     padding: 18px;
-    background: linear-gradient(45deg, #00b4d8, #90e0ef);
+    background: linear-gradient(45deg,  #31c8ff , #90e0ef);
+
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -1185,7 +1279,7 @@ body {
     height: auto;
     width: 100%;
     border-radius: 15px;
-    overflow: hidden; 
+    overflow: hidden;
 
 }
 
@@ -1401,12 +1495,14 @@ canvas {
     font-family: PP Neue Corp Wide, sans-serif;
     font-size: 45px;
     font: bold;
-    color: #ffffff;
+    color: #ffff
 
 }
 
 .title-testimonial span {
-    color: #24d2fd;
+    background: linear-gradient(45deg,  #31c8ff , #90e0ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .testimonial {
@@ -1768,9 +1864,10 @@ canvas {
         width: 90%;
         max-width: 800px;
         padding: 30px 20px;
-        margin: 0 auto; /* untuk center di horizontal */
-      }
-    
+        margin: 0 auto;
+        /* untuk center di horizontal */
+    }
+
 
 
     .parallax__title_about h1 {
@@ -1840,8 +1937,12 @@ canvas {
     .pricing {
         margin-left: 5vh;
     }
- 
 
+        .container-panduan {
+            padding: 100px 100px;
+        }
+      
+      
 
     .container-img-unggulan {
         width: 57vh;
@@ -1917,6 +2018,7 @@ canvas {
     .button-kontak {
         margin-right: 15px;
     }
+
     .card {
         margin: 0 -5px;
     }
@@ -1975,9 +2077,10 @@ canvas {
         width: 90%;
         max-width: 720px;
         padding: 30px 20px;
-        margin: 0 auto; /* untuk center di horizontal */
-      }
-    
+        margin: 0 auto;
+        /* untuk center di horizontal */
+    }
+
 
     .parallax__title_about {
         padding: 20px 20px;
@@ -2046,103 +2149,139 @@ canvas {
     }
 
 
-    .container-cpt-utama {
-        width: auto;
-        margin: 80px 0;
-    }
 
-    .cpt-container {
-        padding: 10px 0 20px 0;
-        margin: 0 0 0 0;
-    }
-
-    .cpt-content-wrapper {
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
-    }
-
-    .cpt-stat-card {
-        padding: 20px 0 20px 0;
-    }
-
-
-    .slide-content {
-        margin: 0 10px;
-    }
-
-    .swiper-navBtn {
-        display: none !important;
-    }
-
-    .social-icons li.title {
-        display: block;
-        margin-right: 0;
-        font-weight: 600;
-    }
-
-    .site-footer {
-        padding-bottom: 0;
-    }
-
-    .site-footer .copyright-text,
-    .site-footer .social-icons {
+    .container-panduan {
+        padding: 35px 80px;
         text-align: center;
     }
 
-    .content-vip {
-        flex-direction: column;
-        align-items: center;
+    .container-panduan h1 {
+        font-size: 1.7rem;
     }
 
-    .benefits,
-    .images-vip {
-        width: 100%;
+    .grid-panduan {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 kolom */
+        gap: 20px;
+        justify-content: center;
     }
 
-    .header-vip h1 {
-        font-size: 36px;
+    .card-panduan img {
+        height: 140px;
     }
 
-    .header-vip p {
-        font-size: 18px;
-    }
-
-    .image-card-vip {
-        margin-right: 3vh;
-    }
-
-    .pricing {
-        margin-left: 6vh;
+    .card-panduan p {
+        font-size: 1rem;
+        padding: 14px;
     }
 
 
-    .title-master {
-        font-size: 33px;
-    }
 
-    .card-unggulan {
-        padding: 85px 0 0 0;
-    }
 
-    .container-img-unggulan {
-        width: 650px;
-        height: 910px;
-        margin: 0 -14vh;
-    }
 
-    .container-img-unggulan img {
-        width: 500px;
-        height: 680px;
-        margin: 0 75px;
-    }
 
-    .card-unggulan .pop-up-image img {
-        width: 95%;
-    }
 
-    .button-unggulan {
-        width: 400px;
-    }
+
+
+
+
+.container-cpt-utama {
+    width: auto;
+    margin: 80px 0;
+}
+
+.cpt-container {
+    padding: 10px 0 20px 0;
+    margin: 0 0 0 0;
+}
+
+.cpt-content-wrapper {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.cpt-stat-card {
+    padding: 20px 0 20px 0;
+}
+
+
+.slide-content {
+    margin: 0 10px;
+}
+
+.swiper-navBtn {
+    display: none !important;
+}
+
+.social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+}
+
+.site-footer {
+    padding-bottom: 0;
+}
+
+.site-footer .copyright-text,
+.site-footer .social-icons {
+    text-align: center;
+}
+
+.content-vip {
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefits,
+.images-vip {
+    width: 100%;
+}
+
+.header-vip h1 {
+    font-size: 36px;
+}
+
+.header-vip p {
+    font-size: 18px;
+}
+
+.image-card-vip {
+    margin-right: 3vh;
+}
+
+.pricing {
+    margin-left: 6vh;
+}
+
+
+.title-master {
+    font-size: 33px;
+}
+
+.card-unggulan {
+    padding: 85px 0 0 0;
+}
+
+.container-img-unggulan {
+    width: 650px;
+    height: 910px;
+    margin: 0 -14vh;
+}
+
+.container-img-unggulan img {
+    width: 500px;
+    height: 680px;
+    margin: 0 75px;
+}
+
+.card-unggulan .pop-up-image img {
+    width: 95%;
+}
+
+.button-unggulan {
+    width: 400px;
+}
 
 }
 
@@ -2181,10 +2320,9 @@ canvas {
     }
 
     .colum-awal {
-        font-size: 17px;
+        font-size: 20px;
         margin: 0 0 0 0;
         font-weight: bold;
-
     }
 
     .colum-kedua {
@@ -2220,14 +2358,15 @@ canvas {
         font-size: 15px;
     }
 
-        .blur-card-popup {
-          width: 90%;
-          max-width: 320px;
-          padding: 30px 20px;
-          margin: 0 auto; /* untuk center di horizontal */
-        }
-      
-      
+    .blur-card-popup {
+        width: 90%;
+        max-width: 320px;
+        padding: 30px 20px;
+        margin: 0 auto;
+        /* untuk center di horizontal */
+    }
+
+
 
     .parallax__title_about {
         display: flex;
@@ -2338,16 +2477,16 @@ canvas {
         margin-left: -7vh;
     }
 
-    .benefits h2{
+    .benefits h2 {
         font-size: 20px;
     }
 
     .benefits ul li {
         font-size: 15px;
-        margin: 15px 0 ;
+        margin: 15px 0;
     }
 
-    .benefits ul li::before{
+    .benefits ul li::before {
         margin: -3px 0 0 0;
     }
 
@@ -2366,7 +2505,7 @@ canvas {
 
 
     .image-card-vip img {
- 
+
         padding: 0;
         margin: 0;
     }
@@ -2423,6 +2562,40 @@ canvas {
     }
 
 
+    .container-panduan {
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .container-panduan h1 {
+        font-size: 1.5rem;
+    }
+
+    .grid-panduan {
+        grid-template-columns: repeat(2, 1fr);
+        /* Jadi 2 kolom */
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .card-panduan {
+        width: 100%;
+    }
+
+    .card-panduan img {
+        height: 120px;
+    }
+
+    .card-panduan p {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+
+
+
+
+
     .container-cpt-utama {
         width: auto;
         padding: 40px 20px;
@@ -2467,12 +2640,12 @@ canvas {
     .container-kontak1 {
         padding: 0 0 0 0;
         margin: 0 0 0 0;
-        
+
     }
 
-    .card-border-kontak{
+    .card-border-kontak {
         padding: 0 0 0 0;
-        
+
     }
 
     .title-master {
@@ -2485,14 +2658,14 @@ canvas {
     }
 
     .card {
-        margin:0 200px;
+        margin: 0 200px;
     }
 
 
 
     .title-master {
         font-size: 20px;
-        padding: 0;
+        padding: 0 30px;
     }
 
     .image-card-vip {
@@ -2560,11 +2733,11 @@ canvas {
         height: 450px;
     }
 
-    .title-testimonial{
+    .title-testimonial {
         font-size: 24px;
     }
 
-    .title-testimonial span{
+    .title-testimonial span {
         font-size: 24px;
     }
 
