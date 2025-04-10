@@ -287,6 +287,7 @@ body {
     font-weight: bold;
 }
 
+
 .colum-kedua {
     position: relative;
     background: rgba(255, 255, 255, 0.1);
@@ -305,7 +306,8 @@ body {
 }
 
 .trading-room {
-    color: #00aced;
+    font-family: PP Neue Corp Wide, sans-serif;
+    color: #31c8ff;
 }
 
 .txt-awal {
@@ -1762,9 +1764,17 @@ canvas {
         height: 270px;
     }
 
+    .blur-card-popup {
+        width: 90%;
+        max-width: 800px;
+        padding: 30px 20px;
+        margin: 0 auto; /* untuk center di horizontal */
+      }
+    
+
 
     .parallax__title_about h1 {
-        font-size: 9vh;
+        font-size: 5vh;
         text-decoration: none;
         margin: 0 0 0 0;
         text-align: center;
@@ -1772,28 +1782,28 @@ canvas {
 
     .parallax__title_about p {
         text-align: center;
-        font-size: 19px;
+        font-size: 15px;
         padding: 0 90px;
         margin: 0 0 0 0;
     }
 
     .visimisi {
-        padding: 20px 0;
+        padding: 0;
     }
 
     .column-visimisi {
-        padding: 50px 100px;
+        padding: 0;
         margin: 0 0 0 0;
         flex-direction: column;
     }
 
     .column-visimisi h2 {
-        font-size: 50px;
+        font-size: 30px;
         margin: 0 0 0 0;
     }
 
     .column-visimisi p {
-        font-size: 19px;
+        font-size: 15px;
         margin: 10px 0 0 0;
 
     }
@@ -1806,7 +1816,7 @@ canvas {
     }
 
     .column h2 {
-        font-size: 50px;
+        font-size: 30px;
         margin: 0 0 0 0;
     }
 
@@ -1815,12 +1825,12 @@ canvas {
     .column span {
         flex-direction: column;
         margin: 0 0 0 0;
-        padding: 10px 100px;
+        padding: 0;
 
     }
 
     .column li {
-        font-size: 20px;
+        font-size: 15px;
         text-align: start;
         line-height: 22px;
         margin: 10px 0;
@@ -1962,11 +1972,12 @@ canvas {
     }
 
     .blur-card-popup {
-        width: 330px;
-        height: auto;
-        margin: 50px 0 0 20px;
-        padding: 30px 20px 20px 20px;
-    }
+        width: 90%;
+        max-width: 720px;
+        padding: 30px 20px;
+        margin: 0 auto; /* untuk center di horizontal */
+      }
+    
 
     .parallax__title_about {
         padding: 20px 20px;
@@ -2195,18 +2206,18 @@ canvas {
 
 
     .overlay-text {
-        max-width: 150px;
-        max-height: 50px;
+        max-width: 250px;
+        max-height: 150px;
         padding: 5px;
         margin: 0 0 0 50px;
     }
 
     .overlay-text .title-kedua {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .overlay-text .jumlah-kedua {
-        font-size: 10px;
+        font-size: 15px;
     }
 
         .blur-card-popup {
@@ -2481,6 +2492,7 @@ canvas {
 
     .title-master {
         font-size: 20px;
+        padding: 0;
     }
 
     .image-card-vip {
