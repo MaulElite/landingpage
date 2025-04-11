@@ -272,4 +272,64 @@ const app = new Vue({
   }
 
 
+// testtimoni corousel
+document.addEventListener("DOMContentLoaded", function () {
+  const track = document.querySelector(".carousel-track");
+  const slides = Array.from(document.querySelectorAll(".carousel-slide"));
+  const prevBtn = document.querySelector(".carousel-btn.prev");
+  const nextBtn = document.querySelector(".carousel-btn.next");
 
+  let slidesPerView = getSlidesPerView();
+  let currentIndex = slidesPerView;
+
+  // Clone first and last slides for infinite effect
+  const firstClones = slides.slice(0, slidesPerView).map(slide => slide.cloneNode(true));
+  const lastClones = slides.slice(-slidesPerView).map(slide => slide.cloneNode(true));
+
+  firstClones.forEach(clone => track.appendChild(clone));
+  lastClones.reverse().forEach(clone => track.insertBefore(clone, track.firstChild));
+
+  const allSlides = document.querySelectorAll(".carousel-slide");
+
+  function getSlidesPerView() {
+    if (window.innerWidth <= 480) return 1;
+    if (window.innerWidth <= 768) return 2;
+    return 4;
+  }
+
+  function updateCarousel(animate = true) {
+    const slideWidth = allSlides[0].offsetWidth;
+    if (!animate) track.style.transition = "none";
+    else track.style.transition = "transform 0.4s ease-in-out";
+    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }
+
+  prevBtn.addEventListener("click", () => {
+    if (currentIndex <= 0) return;
+    currentIndex--;
+    updateCarousel();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (currentIndex >= allSlides.length - slidesPerView) return;
+    currentIndex++;
+    updateCarousel();
+  });
+
+  track.addEventListener("transitionend", () => {
+    if (currentIndex === allSlides.length - slidesPerView) {
+      currentIndex = slidesPerView;
+      updateCarousel(false);
+    } else if (currentIndex === 0) {
+      currentIndex = allSlides.length - slidesPerView * 2;
+      updateCarousel(false);
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    slidesPerView = getSlidesPerView();
+    updateCarousel(false);
+  });
+
+  updateCarousel(false);
+});

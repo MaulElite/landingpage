@@ -1467,7 +1467,53 @@ canvas {
 
 
 
-
+    /* Testimoni corousel */
+    .carousel-testimoni {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+      }
+      
+      .carousel-track {
+        display: flex;
+        transition: transform 0.4s ease-in-out;
+      }
+      
+      .carousel-slide {
+        flex: 0 0 25%; /* 4 per row */
+        box-sizing: border-box;
+        padding: 10px;
+      }
+      
+      .carousel-slide img {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+      }
+      
+      .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.4);
+        border: none;
+        color: white;
+        font-size: 24px;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 50%;
+        z-index: 10;
+      }
+      
+      .carousel-btn.prev {
+        left: 10px;
+      }
+      
+      .carousel-btn.next {
+        right: 10px;
+      }
 
 
 
@@ -1481,7 +1527,7 @@ canvas {
 
 .container-testimonial-body {
     font-family: 'Poppins', sans-serif;
-    padding: 32px;
+    padding: 0 32px 32px 32px;
 }
 
 
@@ -2733,8 +2779,48 @@ canvas {
         height: 450px;
     }
 
+
+        
+        
+    .carousel-testimoni {
+        padding: 0 16px;
+        box-sizing: border-box;
+      }
+    
+      .carousel-track {
+        gap: 0px;
+      }
+    
+      .carousel-slide {
+        flex: 0 0 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 5px;
+      }
+    
+      .carousel-slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 12px;
+      }
+    
+      .carousel-btn {
+        font-size: 18px;
+        padding: 6px 10px;
+        top: 45%;
+        transform: translateY(-50%);
+      }
+      
+
     .title-testimonial {
         font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center
+    }
+
+    .quote {
+        font-size: 13px;
     }
 
     .title-testimonial span {
