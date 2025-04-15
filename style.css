@@ -2387,8 +2387,7 @@ canvas {
 
     .parallax__header,
     .parallax__content {
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
+    
         text-align: center;
     }
 
@@ -2414,12 +2413,13 @@ canvas {
         margin-left: 18px;
         padding: 0 0 0 0;
         border-radius: 10px;
+        justify-items: center;
     }
 
     .colum-kedua img {
+        display: flex;
         width: 500px;
         height: 350px;
-        margin: 0 0 0 -50px;
     }
 
     .btn-awal {
