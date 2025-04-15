@@ -928,12 +928,12 @@ body {
 
 .container-panduan {
     font-family: 'Poppins', sans-serif;
-    padding: 100px 400px;
+    padding: 30px 400px;
     color: #fff;
 }
 
 .container-panduan h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: PP Neue Corp Wide, sans-serif;
     font-size: 30px;
     margin: 0;
     padding: 0;
@@ -946,6 +946,7 @@ body {
     font-weight: bold;
     text-align: center;
     padding-bottom: 20px;
+    margin: 0;
 }
 
 .container-panduan .highlight {
@@ -986,7 +987,28 @@ body {
     color: #fff;
 }
 
+.button-panduan {
+    padding: 20px 100px; 
+    margin-top: 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.6s ease;
+    background-color: #1ba3c5;
+    border: #00000000;
+    cursor: pointer;
+    color: #ffffff;
+}
 
+.button-panduan:hover {
+    padding: 25px  110px;
+    color: rgb(255, 255, 255);
+}
+
+.button-panduan a {
+    text-decoration: none;
+    color: #ffff;
+}
 
 
 
@@ -1229,6 +1251,7 @@ body {
 
 
 .button-unggulan {
+    font-family: 'Poppins', sans-serif;
     padding: 15px;
     border: 2px solid transparent;
     text-decoration: none;
@@ -1272,6 +1295,7 @@ body {
 .container-kontak1 {
     font-family: 'Poppins', sans-serif;
     padding: 50px 0 0 0;
+    margin-bottom: 50px;
     z-index: -1;
 }
 
@@ -1419,6 +1443,7 @@ p+p {
 
 .button-kontak {
     padding: 20px;
+    margin-bottom: 20px;
     border: 2px solid transparent;
     text-decoration: none;
     border-radius: 10px;
@@ -2104,6 +2129,14 @@ canvas {
 
     }
 
+    .colum-awal h1 .trading-room {
+        letter-spacing: 4px;
+    }
+
+    .colum-awal p{
+        font-size:  17px;
+    }
+
     .colum-kedua {}
 
     .colum-kedua img {
@@ -2349,12 +2382,12 @@ canvas {
 
     .parallax__header,
     .parallax__content {
-        padding: 20px 0px 0px;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
         text-align: center;
     }
 
     .blur-card {
-        margin: 0 0 0 0;
         border-radius: 0;
     }
 
@@ -2379,9 +2412,9 @@ canvas {
     }
 
     .colum-kedua img {
-        width: 400px;
-        height: 250px;
-        margin: 0 0 0 0;
+        width: 500px;
+        height: 350px;
+        margin: 0 0 0 -50px;
     }
 
     .btn-awal {
@@ -2609,12 +2642,15 @@ canvas {
 
 
     .container-panduan {
+        margin-top: 20px;
         padding: 30px 15px;
         text-align: center;
     }
 
     .container-panduan h1 {
         font-size: 1.5rem;
+        padding: 0;
+        margin: 0 0 20px 0;
     }
 
     .grid-panduan {
@@ -2637,6 +2673,12 @@ canvas {
         padding: 12px;
     }
 
+    .button-panduan {
+        font-size: 13px;
+        padding: 15px 30px;
+        margin-top: 10px;
+    }
+
 
 
 
@@ -2645,6 +2687,7 @@ canvas {
     .container-cpt-utama {
         width: auto;
         padding: 40px 20px;
+        margin: 0 0 30px 0;
     }
 
     .cpt-container {
@@ -2664,14 +2707,22 @@ canvas {
         font-size: 13px;
     }
 
+    .cpt-benefit-box{
+        padding: 10px 13px 30px 13px;
+    }
+    .cpt-content-wrapper h3{
+        font-size: 17px;
+        padding: 0;
+    }
+
     .cpt-benefit-item {
         font-size: 11px;
         margin: 0 0 0 0;
     }
 
     .cpt-stat-number {
-        font-size: 15px;
-        padding: 15px 0 0 0;
+        font-size: 20px;
+        padding: 5px 0 0 0;
     }
 
     .cpt-stat-label {
@@ -2682,6 +2733,12 @@ canvas {
         width: 150px;
         font-size: 13px;
     }
+
+
+    .container-unggulan.visible {
+        padding: 0;
+    }
+
 
     .container-kontak1 {
         padding: 0 0 0 0;
@@ -2710,7 +2767,7 @@ canvas {
 
 
     .title-master {
-        font-size: 20px;
+        font-size: 25px;
         padding: 0 30px;
     }
 
@@ -2806,10 +2863,10 @@ canvas {
       }
     
       .carousel-btn {
-        font-size: 18px;
-        padding: 6px 10px;
-        top: 45%;
-        transform: translateY(-50%);
+        font-size: 20px;
+        padding: 11px 20px 14px 17px;
+        top: 50%;
+        transform: translateY(-70%);
       }
       
 
