@@ -269,7 +269,6 @@ body {
     width: 1300px;
     padding: 40px 0;
     border-radius: 15px;
-    box-shadow: 0 2px 5px rgb(255, 255, 255);
     overflow: hidden;
     margin-top: 130px;
 }
@@ -307,7 +306,9 @@ body {
 
 .trading-room {
     font-family: PP Neue Corp Wide, sans-serif;
-    color: #31c8ff;
+    background: linear-gradient(45deg, #31c8ff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .txt-awal {
@@ -951,7 +952,9 @@ body {
 }
 
 .container-panduan .highlight {
-    color: #31c8ff;
+    background: linear-gradient(45deg, #31c8ff, #b8fdff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .grid-panduan {
@@ -1318,6 +1321,12 @@ body {
     text-align: center;
     color: #eceeef;
 
+}
+
+.title-master span{
+    background: linear-gradient(45deg, #31c8ff, #b8fdff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p {
@@ -2387,12 +2396,12 @@ canvas {
 
     .parallax__header,
     .parallax__content {
-    
+        
         text-align: center;
     }
 
     .blur-card {
-        border-radius: 0;
+        border-radius: 16px;
     }
 
     .container-awal {
@@ -2402,6 +2411,9 @@ canvas {
 
     }
 
+    .trading-room {
+        font-size: 25px;
+    }
     .colum-awal {
         font-size: 20px;
         margin: 0 0 0 0;
@@ -2418,8 +2430,8 @@ canvas {
 
     .colum-kedua img {
         display: flex;
-        width: 500px;
-        height: 350px;
+        width: 450px;
+        height: 300px;
     }
 
     .btn-awal {
