@@ -924,13 +924,14 @@ body {
 
 
 
-
-
 .container-panduan {
     font-family: 'Poppins', sans-serif;
-    padding: 30px 400px;
+    padding: 30px 20px;
     color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
 
 .container-panduan h3 {
     font-family: PP Neue Corp Wide, sans-serif;
@@ -955,10 +956,14 @@ body {
 
 .grid-panduan {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 kolom x 2 baris = 8 */
     gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
+
+
 
 .card-panduan {
     background-color: #ececec34;
@@ -988,7 +993,7 @@ body {
 }
 
 .button-panduan {
-    padding: 20px 100px; 
+    padding: 20px 100px;
     margin-top: 20px;
     border: 2px solid transparent;
     border-radius: 10px;
@@ -1001,7 +1006,7 @@ body {
 }
 
 .button-panduan:hover {
-    padding: 25px  110px;
+    padding: 25px 110px;
     color: rgb(255, 255, 255);
 }
 
@@ -1009,7 +1014,6 @@ body {
     text-decoration: none;
     color: #ffff;
 }
-
 
 
 
@@ -1059,7 +1063,7 @@ body {
 .cpt-title {
     font-family: PP Neue Corp Wide, sans-serif;
     font-size: 80px;
-    background: linear-gradient(45deg,  #31c8ff , #90e0ef);
+    background: linear-gradient(45deg, #31c8ff, #90e0ef);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 15px;
@@ -1091,7 +1095,7 @@ body {
 
 .cpt-benefit-title {
     font-size: 30px;
-    background: linear-gradient(45deg,  #31c8ff , #90e0ef);
+    background: linear-gradient(45deg, #31c8ff, #90e0ef);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 15px;
@@ -1135,7 +1139,7 @@ body {
 .cpt-stat-number {
     font-size: 50px;
     font-weight: bold;
-    background: linear-gradient(45deg,  #31c8ff , #90e0ef);
+    background: linear-gradient(45deg, #31c8ff, #90e0ef);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 5px;
@@ -1145,7 +1149,7 @@ body {
     display: inline-block;
     width: 100%;
     padding: 18px;
-    background: linear-gradient(45deg,  #31c8ff , #90e0ef);
+    background: linear-gradient(45deg, #31c8ff, #90e0ef);
 
     color: #fff;
     text-decoration: none;
@@ -1222,37 +1226,38 @@ body {
 /* unggulan */
 
 .container-unggulan {
-    display: flex;
-    width: 100%;
-    height: 60em;
-    justify-content: center;
-    padding: 60px 0 0 0;
+    width: auto;
+    height: auto;
+    padding: 50px 0;
+    justify-items: center;
 }
 
 .card-unggulan {
+    display: flex;
+    justify-content: center;
     width: 900px;
     height: auto;
-    padding: 55px 0 60px 0;
-    background: rgba(255, 255, 255, 0.1);
-
-    backdrop-filter: blur(20px);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.card-unggulan img {
-    width: 550px;
-    height: 800px;
-    transition: .2s linear;
+.container-unggulan h1 {
+    font-family: PP Neue Corp Wide, sans-serif;
+    font-size: 5vh;
+    color: #eceeef;
+    margin: 20px 0 5px 0;
 }
 
-.card-unggulan img:hover {
-    transform: scale(1.05);
+.card-unggulan img {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
 }
+
 
 
 .button-unggulan {
     font-family: 'Poppins', sans-serif;
-    padding: 15px;
+    padding: 15px 100px;
     border: 2px solid transparent;
     text-decoration: none;
     border-radius: 15px;
@@ -1492,53 +1497,54 @@ canvas {
 
 
 
-    /* Testimoni corousel */
-    .carousel-testimoni {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        max-width: 1000px;
-        margin: auto;
-      }
-      
-      .carousel-track {
-        display: flex;
-        transition: transform 0.4s ease-in-out;
-      }
-      
-      .carousel-slide {
-        flex: 0 0 25%; /* 4 per row */
-        box-sizing: border-box;
-        padding: 10px;
-      }
-      
-      .carousel-slide img {
-        width: 100%;
-        border-radius: 10px;
-        display: block;
-      }
-      
-      .carousel-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.4);
-        border: none;
-        color: white;
-        font-size: 24px;
-        padding: 8px 12px;
-        cursor: pointer;
-        border-radius: 50%;
-        z-index: 10;
-      }
-      
-      .carousel-btn.prev {
-        left: 10px;
-      }
-      
-      .carousel-btn.next {
-        right: 10px;
-      }
+/* Testimoni corousel */
+.carousel-testimoni {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 25%;
+    /* 4 per row */
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
 
 
 
@@ -1567,11 +1573,10 @@ canvas {
     font-size: 45px;
     font: bold;
     color: #ffff
-
 }
 
 .title-testimonial span {
-    background: linear-gradient(45deg,  #31c8ff , #90e0ef);
+    background: linear-gradient(45deg, #31c8ff, #90e0ef);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -2009,11 +2014,11 @@ canvas {
         margin-left: 5vh;
     }
 
-        .container-panduan {
-            padding: 100px 100px;
-        }
-      
-      
+    .container-panduan {
+        padding: 100px 100px;
+    }
+
+
 
     .container-img-unggulan {
         width: 57vh;
@@ -2133,8 +2138,8 @@ canvas {
         letter-spacing: 4px;
     }
 
-    .colum-awal p{
-        font-size:  17px;
+    .colum-awal p {
+        font-size: 17px;
     }
 
     .colum-kedua {}
@@ -2264,103 +2269,103 @@ canvas {
 
 
 
-.container-cpt-utama {
-    width: auto;
-    margin: 80px 0;
-}
+    .container-cpt-utama {
+        width: auto;
+        margin: 80px 0;
+    }
 
-.cpt-container {
-    padding: 10px 0 20px 0;
-    margin: 0 0 0 0;
-}
+    .cpt-container {
+        padding: 10px 0 20px 0;
+        margin: 0 0 0 0;
+    }
 
-.cpt-content-wrapper {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
+    .cpt-content-wrapper {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
 
-.cpt-stat-card {
-    padding: 20px 0 20px 0;
-}
-
-
-.slide-content {
-    margin: 0 10px;
-}
-
-.swiper-navBtn {
-    display: none !important;
-}
-
-.social-icons li.title {
-    display: block;
-    margin-right: 0;
-    font-weight: 600;
-}
-
-.site-footer {
-    padding-bottom: 0;
-}
-
-.site-footer .copyright-text,
-.site-footer .social-icons {
-    text-align: center;
-}
-
-.content-vip {
-    flex-direction: column;
-    align-items: center;
-}
-
-.benefits,
-.images-vip {
-    width: 100%;
-}
-
-.header-vip h1 {
-    font-size: 36px;
-}
-
-.header-vip p {
-    font-size: 18px;
-}
-
-.image-card-vip {
-    margin-right: 3vh;
-}
-
-.pricing {
-    margin-left: 6vh;
-}
+    .cpt-stat-card {
+        padding: 20px 0 20px 0;
+    }
 
 
-.title-master {
-    font-size: 33px;
-}
+    .slide-content {
+        margin: 0 10px;
+    }
 
-.card-unggulan {
-    padding: 85px 0 0 0;
-}
+    .swiper-navBtn {
+        display: none !important;
+    }
 
-.container-img-unggulan {
-    width: 650px;
-    height: 910px;
-    margin: 0 -14vh;
-}
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600;
+    }
 
-.container-img-unggulan img {
-    width: 500px;
-    height: 680px;
-    margin: 0 75px;
-}
+    .site-footer {
+        padding-bottom: 0;
+    }
 
-.card-unggulan .pop-up-image img {
-    width: 95%;
-}
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center;
+    }
 
-.button-unggulan {
-    width: 400px;
-}
+    .content-vip {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits,
+    .images-vip {
+        width: 100%;
+    }
+
+    .header-vip h1 {
+        font-size: 36px;
+    }
+
+    .header-vip p {
+        font-size: 18px;
+    }
+
+    .image-card-vip {
+        margin-right: 3vh;
+    }
+
+    .pricing {
+        margin-left: 6vh;
+    }
+
+
+    .title-master {
+        font-size: 33px;
+    }
+
+    .card-unggulan {
+        padding: 85px 0 0 0;
+    }
+
+    .container-img-unggulan {
+        width: 650px;
+        height: 910px;
+        margin: 0 -14vh;
+    }
+
+    .container-img-unggulan img {
+        width: 500px;
+        height: 680px;
+        margin: 0 75px;
+    }
+
+    .card-unggulan .pop-up-image img {
+        width: 95%;
+    }
+
+    .button-unggulan {
+        width: 400px;
+    }
 
 }
 
@@ -2707,10 +2712,11 @@ canvas {
         font-size: 13px;
     }
 
-    .cpt-benefit-box{
+    .cpt-benefit-box {
         padding: 10px 13px 30px 13px;
     }
-    .cpt-content-wrapper h3{
+
+    .cpt-content-wrapper h3 {
         font-size: 17px;
         padding: 0;
     }
@@ -2735,8 +2741,32 @@ canvas {
     }
 
 
-    .container-unggulan.visible {
+    .container-unggulan {
+        margin-top: 30px;
+    }
+    .container-unggulan h1{
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    .card-unggulan {
+        width: 100%;
+        height: 100%;
+        margin: 0 0 0 0;
         padding: 0;
+    }
+
+    .card-unggulan h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .card-unggulan img {
+        width: 100%;
+        height: 1000%;
+    }
+
+    .button-unggulan {
+        padding: 15px 50px;
     }
 
 
@@ -2806,69 +2836,41 @@ canvas {
         width: 200px;
     }
 
-    .container-img-unggulan {
-        width: 350px;
-        height: 610px;
-        margin-left: -148px;
-    }
-
-    .container-img-unggulan img {
-        width: 300px;
-        height: 380px;
-        margin: 0 28px;
-    }
-
-    .container-unggulan {
-        width: 100%;
-        height: 700px;
-        padding: 0 0 100px 0;
-    }
-
-    .card-unggulan {
-        width: 90%;
-        height: auto;
-        margin: 0 0 0 0;
-        padding: 100px 0 0 0;
-    }
-
-    .card-unggulan img {
-        width: 300px;
-        height: 450px;
-    }
 
 
-        
-        
+
+
+
     .carousel-testimoni {
         padding: 0 16px;
         box-sizing: border-box;
-      }
-    
-      .carousel-track {
+    }
+
+    .carousel-track {
         gap: 0px;
-      }
-    
-      .carousel-slide {
+    }
+
+    .carousel-slide {
         flex: 0 0 100%;
         max-width: 100%;
         box-sizing: border-box;
         padding: 0 5px;
-      }
-    
-      .carousel-slide img {
+    }
+
+    .carousel-slide img {
         width: 100%;
         height: auto;
         display: block;
         border-radius: 12px;
-      }
-    
-      .carousel-btn {
+    }
+
+    .carousel-btn {
         font-size: 20px;
         padding: 11px 20px 14px 17px;
         top: 50%;
         transform: translateY(-70%);
-      }
-      
+    }
+
 
     .title-testimonial {
         font-size: 24px;
