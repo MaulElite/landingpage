@@ -326,7 +326,7 @@ body {
     cursor: pointer;
     font-weight: 600;
     color: #ffffff;
-    background-color: #1ba3c5;
+    background-color: #20d2ff96;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
 }
@@ -364,7 +364,7 @@ body {
     position: absolute;
     left: 20px;
     bottom: 20px;
-    background-color: rgba(0, 164, 204, 0.7);
+    background-color: #20d2ff86;
     color: white;
     padding: 15px;
     border-radius: 10px;
@@ -2421,6 +2421,10 @@ canvas {
         font-weight: bold;
     }
 
+    .colum-awal h1 {
+        margin-top: 30px;
+    }
+
     .colum-kedua {
         width: 100%;
         padding: 0;
@@ -2759,6 +2763,7 @@ canvas {
 
     .container-unggulan {
         margin-top: 30px;
+        padding: 10px 0 0 0;
     }
     .container-unggulan h1{
         margin-bottom: 10px;
