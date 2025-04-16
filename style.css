@@ -296,7 +296,6 @@ body {
 .colum-kedua img {
     width: 520px;
     height: 400px;
-    margin-left: 50px;
     transition: .2s linear;
 }
 
@@ -1153,7 +1152,6 @@ body {
     width: 100%;
     padding: 18px;
     background: linear-gradient(45deg, #31c8ff, #90e0ef);
-
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -1585,9 +1583,7 @@ canvas {
 }
 
 .title-testimonial span {
-    background: linear-gradient(45deg, #31c8ff, #90e0ef);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #7dd9fa;
 }
 
 .testimonial {
@@ -2421,17 +2417,19 @@ canvas {
     }
 
     .colum-kedua {
-        width: 90%;
-        margin-left: 18px;
-        padding: 0 0 0 0;
+        width: 100%;
+        padding: 0;
         border-radius: 10px;
-        justify-items: center;
-    }
-
-    .colum-kedua img {
         display: flex;
-        width: 450px;
-        height: 300px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .colum-kedua img {
+        width: 400px;
+        height: auto;
+        border-radius: 10px;
     }
 
     .btn-awal {
@@ -2661,10 +2659,11 @@ canvas {
     .container-panduan {
         margin-top: 20px;
         padding: 30px 15px;
-        text-align: center;
+       
     }
 
     .container-panduan h1 {
+        text-align: center;
         font-size: 1.5rem;
         padding: 0;
         margin: 0 0 20px 0;
@@ -2768,7 +2767,7 @@ canvas {
     }
 
     .card-unggulan h1 {
-        margin: 0;
+        margin: 0 0 0 0;
         font-size: 24px;
     }
 
@@ -2779,6 +2778,7 @@ canvas {
 
     .button-unggulan {
         padding: 15px 50px;
+        margin: 0;
     }
 
 
