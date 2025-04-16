@@ -251,6 +251,7 @@ body {
 }
 
 .parallax__content {
+    z-index: 31;
     font-family: 'Poppins', sans-serif;
     margin: 120px 0 0 0;
     padding: 50px 100px;
@@ -581,7 +582,6 @@ body {
     position: relative;
     width: 100%;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
     padding: 20px 0;
 }
 
@@ -1236,7 +1236,7 @@ body {
 .card-unggulan {
     display: flex;
     justify-content: center;
-    width: 900px;
+    width: 60%;
     height: auto;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -2343,29 +2343,30 @@ canvas {
         margin-left: 6vh;
     }
 
+    .container-kontak {
+        padding: 0 20px;
+    }
 
     .title-master {
-        font-size: 33px;
+        font-size: 35px;
+    }
+
+    .container-unggulan {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-unggulan h1{
+        font-size: 35px;
     }
 
     .card-unggulan {
-        padding: 85px 0 0 0;
+        padding: 10px 0 0 0;
     }
 
-    .container-img-unggulan {
-        width: 650px;
-        height: 910px;
-        margin: 0 -14vh;
-    }
-
-    .container-img-unggulan img {
-        width: 500px;
-        height: 680px;
-        margin: 0 75px;
-    }
-
-    .card-unggulan .pop-up-image img {
-        width: 95%;
+    .card-unggulan img{
+        width: 130%;
+        height: auto;
     }
 
     .button-unggulan {
@@ -2390,13 +2391,17 @@ canvas {
     }
 
 
-    .parallax__header,
-    .parallax__content {
-        
+    .parallax__header {
         text-align: center;
+    }
+    .parallax__content {
+        text-align: center;
+        
     }
 
     .blur-card {
+        margin: 0;
+        padding: 0 0 15px 0;
         border-radius: 16px;
     }
 
@@ -2773,7 +2778,7 @@ canvas {
 
     .card-unggulan img {
         width: 100%;
-        height: 1000%;
+        height: 100%;
     }
 
     .button-unggulan {
@@ -2836,7 +2841,7 @@ canvas {
     }
 
     .carousel-visimisi {
-        margin-top: 110px;
+        margin-top: 8px;
     }
 
     .carousel-track-visimisi {
