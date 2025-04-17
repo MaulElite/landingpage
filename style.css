@@ -938,6 +938,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    
 }
 
 .container-panduan h1 {
@@ -950,9 +951,8 @@ body {
 }
 
 .container-panduan .highlight {
-    background: linear-gradient(45deg, #31c8ff, #b8fdff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #31c8ff;
+    text-shadow: 5px 5px 20px rgba(255, 255, 255, 0.603);
 }
 
 .grid-panduan {
@@ -1064,10 +1064,9 @@ body {
 .cpt-title {
     font-family: PP Neue Corp Wide, sans-serif;
     font-size: 80px;
-    background: linear-gradient(45deg, #31c8ff, #90e0ef);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:  #31c8ff;
     margin-bottom: 15px;
+    text-shadow: 5px 5px 20px rgba(255, 255, 255, 0.603);
 }
 
 .cpt-subtitle {
@@ -1245,6 +1244,7 @@ body {
     font-size: 5vh;
     color: #eceeef;
     margin: 20px 0 5px 0;
+    text-shadow: 5px 5px 20px rgba(255, 255, 255, 0.63);
 }
 
 .card-unggulan img {
@@ -1322,9 +1322,8 @@ body {
 }
 
 .title-master span{
-    background: linear-gradient(45deg, #31c8ff, #b8fdff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #31c8ff;
+    text-shadow: 5px 5px 20px rgba(255, 255, 255, 0.603);
 }
 
 p {
@@ -1579,7 +1578,8 @@ canvas {
     font-family: PP Neue Corp Wide, sans-serif;
     font-size: 45px;
     font: bold;
-    color: #ffff
+    color: #ffff;
+    text-shadow: 5px 5px 20px rgba(255, 255, 255, 0.342);
 }
 
 .title-testimonial span {
