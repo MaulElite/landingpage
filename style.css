@@ -1911,7 +1911,7 @@ canvas {
 @media (max-width: 1300px) {
 
     .parallax__content {
-        padding: 200px 100px;
+        padding:  0 100px 50px 100px;
         text-align: center;
     }
 
@@ -1933,7 +1933,7 @@ canvas {
     }
 
     .colum-awal p {
-        font-size: 12px;
+        font-size: 20px;
     }
 
     .colum-kedua img {
