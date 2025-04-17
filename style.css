@@ -774,7 +774,7 @@ body {
 }
 
 .images-vip {
-    width: 800px;
+    width: 500px;
     flex-direction: column;
     gap: 20px;
 
@@ -1235,7 +1235,7 @@ body {
 .card-unggulan {
     display: flex;
     justify-content: center;
-    width: 45%;
+    width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -2020,8 +2020,17 @@ canvas {
         padding: 100px 100px;
     }
 
+    .container-unggulan h1{
+        font-size: 48px;
+    }
+
+    .card-unggulan {
+        width: 90%;
+        
+    }
+
     .container-unggulan img{
-        width:300%;
+        width:100%;
         justify-content: center;
         margin: 0 auto;
     }
@@ -2030,6 +2039,8 @@ canvas {
     .button-unggulan {
         margin-left: 1vh;
     }
+
+    
 
     .image-card-vip img {
         width: 300px;
