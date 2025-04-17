@@ -807,7 +807,6 @@ body {
 }
 
 .pricing {
-    margin-right: 7vh;
     margin-top: 0;
     background: rgba(255, 255, 255, 0.1);
     padding: 40px 1px;
@@ -1236,7 +1235,7 @@ body {
 .card-unggulan {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 50%;
     height: auto;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -2015,9 +2014,6 @@ canvas {
     }
 
 
-    .pricing {
-        margin-left: 5vh;
-    }
 
     .container-panduan {
         padding: 100px 100px;
@@ -2337,10 +2333,6 @@ canvas {
 
     .image-card-vip {
         margin-right: 3vh;
-    }
-
-    .pricing {
-        margin-left: 6vh;
     }
 
     .container-kontak {
@@ -2836,10 +2828,6 @@ canvas {
         margin: 0 0 0 1px;
     }
 
-    .pricing {
-        margin-left: 8vh;
-
-    }
 
     .container-kontak1 {
         padding: 40px;
