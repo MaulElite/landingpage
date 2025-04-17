@@ -1235,7 +1235,7 @@ body {
 .card-unggulan {
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 45%;
     height: auto;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -1251,6 +1251,7 @@ body {
     width: 100%;
     height: 500px;
     border-radius: 20px;
+    margin: 0 auto;
 }
 
 
@@ -1564,7 +1565,7 @@ canvas {
 
 .container-testimonial-body {
     font-family: 'Poppins', sans-serif;
-    padding: 0 32px 32px 32px;
+    padding: 10px 32px 32px 32px;
 }
 
 
@@ -1600,7 +1601,7 @@ canvas {
     height: 60px;
     border-radius: 50%;
     position: absolute;
-    top: -30px;
+    top: -20px;
     right: 20px;
     border: 3px solid #000000;
     background-color: #fffcf9;
@@ -2019,19 +2020,13 @@ canvas {
         padding: 100px 100px;
     }
 
-
-
-    .container-img-unggulan {
-        width: 57vh;
-        height: 910px;
-        margin-left: -148px;
+    .container-unggulan img{
+        width:300%;
+        justify-content: center;
+        margin: 0 auto;
     }
 
-    .container-img-unggulan img {
-        width: 500px;
-        height: 680px;
-    }
-
+    
     .button-unggulan {
         margin-left: 1vh;
     }
@@ -2091,7 +2086,12 @@ canvas {
         width: 30%;
         font-size: 15px;
     }
-
+    .container-kontak {
+        padding: 0 40px;
+    }
+    .title-master {
+        padding: 0 10px;
+    }
     .button-kontak {
         margin-right: 15px;
     }
@@ -2354,6 +2354,7 @@ canvas {
 
     .card-unggulan {
         padding: 10px 0 0 0;
+    
     }
 
     .card-unggulan img{
