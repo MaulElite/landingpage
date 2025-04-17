@@ -2894,6 +2894,12 @@ canvas {
     }
 
 
+    .modal .prev, .modal .next {
+        padding: 5px 12px 8px 12px;
+    }
+
+
+
     .title-testimonial {
         font-size: 24px;
         margin-bottom: 20px;
