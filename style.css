@@ -1911,6 +1911,8 @@ canvas {
 @media (max-width: 1300px) {
 
     .parallax__content {
+        padding: 0 100px 50px 100px;
+        margin-top: 100px;
         padding:  0 100px 50px 100px;
         text-align: center;
     }
@@ -1930,9 +1932,15 @@ canvas {
 
     .colum-awal h1 {
         font-size: 20px;
+        padding: 0 20px;
+    }
+
+    .colum-awal h1 span {
+        font-size: 25px;
     }
 
     .colum-awal p {
+        font-size: 17px;
         font-size: 20px;
     }
 
@@ -2014,10 +2022,40 @@ canvas {
         margin: 10px 0;
     }
 
+    .container-vip {
+        margin: 0 50px;
+        gap: 0;
+    }
 
+    .header-vip {
+        margin-bottom: 0;
+    }
+
+    .header-vip p {
+        font-size: 22px;
+        padding: 0 100px;
+        margin-bottom: 0;
+    }
+
+    .benefits h2{
+        margin-top: 10px;
+    }
+
+    .benefits ul li {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .image-card-vip {
+        padding-top: 10px;
+    }
+
+    .image-card-vip img {
+        width: 80%;
+    }
 
     .container-panduan {
-        padding: 100px 100px;
+        padding: 70px 70px;
     }
 
     .container-unggulan h1{
@@ -2042,15 +2080,12 @@ canvas {
 
     
 
-    .image-card-vip img {
-        width: 300px;
-        padding-top: 30px;
-        margin-top: 30px;
-    }
+    
 
 
     .container-cpt-utama {
         height: auto;
+        margin-top: 0;
     }
 
     .cpt-container {
@@ -2108,7 +2143,7 @@ canvas {
     }
 
     .card {
-        margin: 0 -5px;
+        margin: 0 10px;
     }
 
 
@@ -2242,6 +2277,22 @@ canvas {
         font-size: 14px;
         margin: 10px 0 10px 0;
 
+    }
+    
+    .container-vip {
+        margin: 0 0;
+    }
+
+    .header-vip p{
+        padding: 0 50px;
+    }
+
+    .benefits h2{
+        margin-left: 30px;
+    }
+
+    .pricing {
+        padding: 10px 100px;
     }
 
 
@@ -2568,12 +2619,14 @@ canvas {
 
     .header-vip h1 {
         font-size: 30px;
-
+        margin-bottom: 0;
     }
 
     .header-vip p {
         font-size: 16px;
         color: #f0f0f0;
+        padding: 10px 20px;
+        margin: 0;
     }
 
     .content-vip {
@@ -2586,6 +2639,8 @@ canvas {
 
     .benefits h2 {
         font-size: 20px;
+        text-align: center;
+        margin-top: 35px;
     }
 
     .benefits ul li {
@@ -2624,6 +2679,7 @@ canvas {
 
     .pricing {
         width: 300px;
+        padding: 20px 0;
     }
 
     .pricing h2 {
