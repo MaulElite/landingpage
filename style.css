@@ -1,12 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('img/forex.png');
+    background-image: url('img/bgdr.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    image-rendering: optimizeSpeed;
 }
 
 
