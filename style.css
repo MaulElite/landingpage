@@ -2947,20 +2947,25 @@ canvas {
         max-width: 100%;
         box-sizing: border-box;
         padding: 0 5px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
+    
     .carousel-slide img {
-        width: 100%;
+        width: 60%;
         height: auto;
         display: block;
         border-radius: 12px;
     }
-
+    
     .carousel-btn {
         font-size: 20px;
         padding: 11px 20px 14px 17px;
-        top: 50%;
+        top: 60%;
         transform: translateY(-70%);
+        margin: 0 30px;
     }
 
 
